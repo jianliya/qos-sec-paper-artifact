@@ -1,0 +1,46 @@
+{
+  "scenario": "timing_compile_configuration_sweep",
+  "seeds": [42, 43, 44, 45],
+  "catalog_seed": 0,
+  "benign_jobs": 24,
+  "probe_jobs": 160,
+  "victim_jobs": 14,
+  "baseline_names": ["balanced", "secure_joint", "queue"],
+  "attack_scheduler": "balanced",
+  "defense_scheduler": "secure_joint",
+  "active_workload_profile": "controlled",
+  "workload_profiles": {
+    "controlled": {
+      "pressure_multiplier": 1.0
+    }
+  },
+  "observability_mode": "full",
+  "masked_mode": "hardened",
+  "reference_profile": "compile_visible",
+  "compile_profiles": [
+    "compile_visible",
+    "logical_only",
+    "shuffled_compile_features",
+    "random_matched_features",
+    "compile_path_neutralized"
+  ],
+  "optimization_levels": [0, 1, 2, 3],
+  "transpiler_seeds": [23, 29, 31, 37],
+  "layout_methods": ["trivial", "sabre"],
+  "routing_methods": ["basic", "sabre"],
+  "quantum_ablation_defaults": {
+    "use_backend_quality_variation": true,
+    "use_queue_time_variation": true,
+    "use_backend_utilization_variation": true,
+    "use_backend_size_heterogeneity": true,
+    "use_compile_path_variation": true,
+    "use_noise_shaping_variation": true,
+    "use_eligibility_variation": true,
+    "use_class_dependent_pressure": true,
+    "use_isolation_pressure_boost": true,
+    "use_probe_pressure_discount": true,
+    "scheduler_override": null,
+    "defense_scheduler_override": null,
+    "observability_mode_override": null
+  }
+}

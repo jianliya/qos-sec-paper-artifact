@@ -1,0 +1,40 @@
+{
+  "scenario": "timing_probe_budget",
+  "seed": 42,
+  "seeds": [42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57],
+  "benign_jobs": 30,
+  "probe_jobs": 220,
+  "victim_jobs": 16,
+  "baseline_names": ["balanced", "isolation", "secure_joint"],
+  "attack_scheduler": "balanced",
+  "defense_scheduler": "balanced",
+  "active_workload_profile": "controlled",
+  "workload_profiles": {
+    "controlled": {
+      "benign_count_scale": 1.0,
+      "probe_count_scale": 1.0,
+      "victim_count_scale": 1.0,
+      "benign_arrival_gap": 0.6,
+      "victim_arrival_gap": 0.75,
+      "probe_arrival_gap": 0.55,
+      "pressure_multiplier": 1.0
+    }
+  },
+  "observability_mode": "external_only",
+  "masked_mode": "hardened",
+  "backend_encoding": "onehot",
+  "observation_space": "O_ext",
+  "public_feature_set": "wait_only",
+  "evaluation_split_mode": "leave_one_seed_out",
+  "grouped_split_seed": 2026,
+  "probe_budget_protocol": "secret_bundle_loso",
+  "attacker_secret_unit": "one victim-family seed",
+  "bundle_selection_rule": "first_k_probe_traces",
+  "bundle_feature_rule": "bundle_summary_statistics",
+  "probe_budget_split_mode": "leave_one_seed_out",
+  "probe_budget_grouped_split_seed": 2026,
+  "ci_method": "student_t",
+  "probe_budgets": [1, 5, 10, 20, 50, 220],
+  "output_dir": "results/timing_oext/probe_budget",
+  "output_summary_filename": "summary_probe_budget.json"
+}

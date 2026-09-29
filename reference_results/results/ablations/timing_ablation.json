@@ -1,0 +1,525 @@
+{
+  "scenario": "timing_ablation",
+  "ablations": {
+    "hardened": {
+      "accuracy": {
+        "mean": 0.6301,
+        "std": 0.0351,
+        "min": 0.5909,
+        "max": 0.7,
+        "ci95": 0.0243
+      },
+      "leakage_advantage": {
+        "mean": 0.1301,
+        "std": 0.0351,
+        "min": 0.0909,
+        "max": 0.2,
+        "ci95": 0.0243
+      },
+      "threshold_accuracy": {
+        "mean": 0.6028,
+        "std": 0.0237,
+        "min": 0.55,
+        "max": 0.6273,
+        "ci95": 0.0164
+      },
+      "threshold_leakage_advantage": {
+        "mean": 0.1028,
+        "std": 0.0237,
+        "min": 0.05,
+        "max": 0.1273,
+        "ci95": 0.0164
+      },
+      "defended_accuracy": {
+        "mean": 0.4829,
+        "std": 0.0215,
+        "min": 0.4545,
+        "max": 0.5136,
+        "ci95": 0.0149
+      },
+      "defended_leakage_advantage": {
+        "mean": -0.0171,
+        "std": 0.0215,
+        "min": -0.0455,
+        "max": 0.0136,
+        "ci95": 0.0149
+      },
+      "defended_threshold_accuracy": {
+        "mean": 0.4937,
+        "std": 0.0294,
+        "min": 0.4545,
+        "max": 0.5409,
+        "ci95": 0.0204
+      },
+      "defended_threshold_leakage_advantage": {
+        "mean": -0.0063,
+        "std": 0.0294,
+        "min": -0.0455,
+        "max": 0.0409,
+        "ci95": 0.0204
+      },
+      "defense_gain": {
+        "mean": 0.1472,
+        "std": 0.0328,
+        "min": 0.0864,
+        "max": 0.1864,
+        "ci95": 0.0227
+      }
+    },
+    "jittered": {
+      "accuracy": {
+        "mean": 0.6301,
+        "std": 0.0351,
+        "min": 0.5909,
+        "max": 0.7,
+        "ci95": 0.0243
+      },
+      "leakage_advantage": {
+        "mean": 0.1301,
+        "std": 0.0351,
+        "min": 0.0909,
+        "max": 0.2,
+        "ci95": 0.0243
+      },
+      "threshold_accuracy": {
+        "mean": 0.6028,
+        "std": 0.0237,
+        "min": 0.55,
+        "max": 0.6273,
+        "ci95": 0.0164
+      },
+      "threshold_leakage_advantage": {
+        "mean": 0.1028,
+        "std": 0.0237,
+        "min": 0.05,
+        "max": 0.1273,
+        "ci95": 0.0164
+      },
+      "defended_accuracy": {
+        "mean": 0.5915,
+        "std": 0.0341,
+        "min": 0.5227,
+        "max": 0.6364,
+        "ci95": 0.0236
+      },
+      "defended_leakage_advantage": {
+        "mean": 0.0915,
+        "std": 0.0341,
+        "min": 0.0227,
+        "max": 0.1364,
+        "ci95": 0.0236
+      },
+      "defended_threshold_accuracy": {
+        "mean": 0.5841,
+        "std": 0.0374,
+        "min": 0.5182,
+        "max": 0.6409,
+        "ci95": 0.0259
+      },
+      "defended_threshold_leakage_advantage": {
+        "mean": 0.0841,
+        "std": 0.0374,
+        "min": 0.0182,
+        "max": 0.1409,
+        "ci95": 0.0259
+      },
+      "defense_gain": {
+        "mean": 0.0386,
+        "std": 0.0314,
+        "min": -0.0136,
+        "max": 0.0818,
+        "ci95": 0.0218
+      }
+    },
+    "masked": {
+      "accuracy": {
+        "mean": 0.6301,
+        "std": 0.0351,
+        "min": 0.5909,
+        "max": 0.7,
+        "ci95": 0.0243
+      },
+      "leakage_advantage": {
+        "mean": 0.1301,
+        "std": 0.0351,
+        "min": 0.0909,
+        "max": 0.2,
+        "ci95": 0.0243
+      },
+      "threshold_accuracy": {
+        "mean": 0.6028,
+        "std": 0.0237,
+        "min": 0.55,
+        "max": 0.6273,
+        "ci95": 0.0164
+      },
+      "threshold_leakage_advantage": {
+        "mean": 0.1028,
+        "std": 0.0237,
+        "min": 0.05,
+        "max": 0.1273,
+        "ci95": 0.0164
+      },
+      "defended_accuracy": {
+        "mean": 0.6023,
+        "std": 0.0262,
+        "min": 0.55,
+        "max": 0.6364,
+        "ci95": 0.0182
+      },
+      "defended_leakage_advantage": {
+        "mean": 0.1023,
+        "std": 0.0262,
+        "min": 0.05,
+        "max": 0.1364,
+        "ci95": 0.0182
+      },
+      "defended_threshold_accuracy": {
+        "mean": 0.5915,
+        "std": 0.032,
+        "min": 0.5273,
+        "max": 0.6364,
+        "ci95": 0.0222
+      },
+      "defended_threshold_leakage_advantage": {
+        "mean": 0.0915,
+        "std": 0.032,
+        "min": 0.0273,
+        "max": 0.1364,
+        "ci95": 0.0222
+      },
+      "defense_gain": {
+        "mean": 0.0278,
+        "std": 0.0303,
+        "min": -0.0136,
+        "max": 0.0773,
+        "ci95": 0.021
+      }
+    },
+    "coarse": {
+      "accuracy": {
+        "mean": 0.6301,
+        "std": 0.0351,
+        "min": 0.5909,
+        "max": 0.7,
+        "ci95": 0.0243
+      },
+      "leakage_advantage": {
+        "mean": 0.1301,
+        "std": 0.0351,
+        "min": 0.0909,
+        "max": 0.2,
+        "ci95": 0.0243
+      },
+      "threshold_accuracy": {
+        "mean": 0.6028,
+        "std": 0.0237,
+        "min": 0.55,
+        "max": 0.6273,
+        "ci95": 0.0164
+      },
+      "threshold_leakage_advantage": {
+        "mean": 0.1028,
+        "std": 0.0237,
+        "min": 0.05,
+        "max": 0.1273,
+        "ci95": 0.0164
+      },
+      "defended_accuracy": {
+        "mean": 0.6125,
+        "std": 0.0538,
+        "min": 0.5136,
+        "max": 0.7045,
+        "ci95": 0.0373
+      },
+      "defended_leakage_advantage": {
+        "mean": 0.1125,
+        "std": 0.0538,
+        "min": 0.0136,
+        "max": 0.2045,
+        "ci95": 0.0373
+      },
+      "defended_threshold_accuracy": {
+        "mean": 0.5915,
+        "std": 0.032,
+        "min": 0.5273,
+        "max": 0.6364,
+        "ci95": 0.0222
+      },
+      "defended_threshold_leakage_advantage": {
+        "mean": 0.0915,
+        "std": 0.032,
+        "min": 0.0273,
+        "max": 0.1364,
+        "ci95": 0.0222
+      },
+      "defense_gain": {
+        "mean": 0.0176,
+        "std": 0.0297,
+        "min": -0.0182,
+        "max": 0.0773,
+        "ci95": 0.0206
+      }
+    },
+    "hardened_no_padding": {
+      "accuracy": {
+        "mean": 0.6301,
+        "std": 0.0351,
+        "min": 0.5909,
+        "max": 0.7,
+        "ci95": 0.0243
+      },
+      "leakage_advantage": {
+        "mean": 0.1301,
+        "std": 0.0351,
+        "min": 0.0909,
+        "max": 0.2,
+        "ci95": 0.0243
+      },
+      "threshold_accuracy": {
+        "mean": 0.6028,
+        "std": 0.0237,
+        "min": 0.55,
+        "max": 0.6273,
+        "ci95": 0.0164
+      },
+      "threshold_leakage_advantage": {
+        "mean": 0.1028,
+        "std": 0.0237,
+        "min": 0.05,
+        "max": 0.1273,
+        "ci95": 0.0164
+      },
+      "defended_accuracy": {
+        "mean": 0.5222,
+        "std": 0.068,
+        "min": 0.3818,
+        "max": 0.6,
+        "ci95": 0.0471
+      },
+      "defended_leakage_advantage": {
+        "mean": 0.0222,
+        "std": 0.068,
+        "min": -0.1182,
+        "max": 0.1,
+        "ci95": 0.0471
+      },
+      "defended_threshold_accuracy": {
+        "mean": 0.5398,
+        "std": 0.0306,
+        "min": 0.5136,
+        "max": 0.6,
+        "ci95": 0.0212
+      },
+      "defended_threshold_leakage_advantage": {
+        "mean": 0.0398,
+        "std": 0.0306,
+        "min": 0.0136,
+        "max": 0.1,
+        "ci95": 0.0212
+      },
+      "defense_gain": {
+        "mean": 0.108,
+        "std": 0.0625,
+        "min": 0.0091,
+        "max": 0.2091,
+        "ci95": 0.0433
+      }
+    },
+    "hardened_no_mask": {
+      "accuracy": {
+        "mean": 0.6301,
+        "std": 0.0351,
+        "min": 0.5909,
+        "max": 0.7,
+        "ci95": 0.0243
+      },
+      "leakage_advantage": {
+        "mean": 0.1301,
+        "std": 0.0351,
+        "min": 0.0909,
+        "max": 0.2,
+        "ci95": 0.0243
+      },
+      "threshold_accuracy": {
+        "mean": 0.6028,
+        "std": 0.0237,
+        "min": 0.55,
+        "max": 0.6273,
+        "ci95": 0.0164
+      },
+      "threshold_leakage_advantage": {
+        "mean": 0.1028,
+        "std": 0.0237,
+        "min": 0.05,
+        "max": 0.1273,
+        "ci95": 0.0164
+      },
+      "defended_accuracy": {
+        "mean": 0.4829,
+        "std": 0.0215,
+        "min": 0.4545,
+        "max": 0.5136,
+        "ci95": 0.0149
+      },
+      "defended_leakage_advantage": {
+        "mean": -0.0171,
+        "std": 0.0215,
+        "min": -0.0455,
+        "max": 0.0136,
+        "ci95": 0.0149
+      },
+      "defended_threshold_accuracy": {
+        "mean": 0.4937,
+        "std": 0.0294,
+        "min": 0.4545,
+        "max": 0.5409,
+        "ci95": 0.0204
+      },
+      "defended_threshold_leakage_advantage": {
+        "mean": -0.0063,
+        "std": 0.0294,
+        "min": -0.0455,
+        "max": 0.0409,
+        "ci95": 0.0204
+      },
+      "defense_gain": {
+        "mean": 0.1472,
+        "std": 0.0328,
+        "min": 0.0864,
+        "max": 0.1864,
+        "ci95": 0.0227
+      }
+    },
+    "hardened_no_queue_reset": {
+      "accuracy": {
+        "mean": 0.6301,
+        "std": 0.0351,
+        "min": 0.5909,
+        "max": 0.7,
+        "ci95": 0.0243
+      },
+      "leakage_advantage": {
+        "mean": 0.1301,
+        "std": 0.0351,
+        "min": 0.0909,
+        "max": 0.2,
+        "ci95": 0.0243
+      },
+      "threshold_accuracy": {
+        "mean": 0.6028,
+        "std": 0.0237,
+        "min": 0.55,
+        "max": 0.6273,
+        "ci95": 0.0164
+      },
+      "threshold_leakage_advantage": {
+        "mean": 0.1028,
+        "std": 0.0237,
+        "min": 0.05,
+        "max": 0.1273,
+        "ci95": 0.0164
+      },
+      "defended_accuracy": {
+        "mean": 0.4829,
+        "std": 0.0215,
+        "min": 0.4545,
+        "max": 0.5136,
+        "ci95": 0.0149
+      },
+      "defended_leakage_advantage": {
+        "mean": -0.0171,
+        "std": 0.0215,
+        "min": -0.0455,
+        "max": 0.0136,
+        "ci95": 0.0149
+      },
+      "defended_threshold_accuracy": {
+        "mean": 0.4937,
+        "std": 0.0294,
+        "min": 0.4545,
+        "max": 0.5409,
+        "ci95": 0.0204
+      },
+      "defended_threshold_leakage_advantage": {
+        "mean": -0.0063,
+        "std": 0.0294,
+        "min": -0.0455,
+        "max": 0.0409,
+        "ci95": 0.0204
+      },
+      "defense_gain": {
+        "mean": 0.1472,
+        "std": 0.0328,
+        "min": 0.0864,
+        "max": 0.1864,
+        "ci95": 0.0227
+      }
+    },
+    "hardened_no_score_suppression": {
+      "accuracy": {
+        "mean": 0.6301,
+        "std": 0.0351,
+        "min": 0.5909,
+        "max": 0.7,
+        "ci95": 0.0243
+      },
+      "leakage_advantage": {
+        "mean": 0.1301,
+        "std": 0.0351,
+        "min": 0.0909,
+        "max": 0.2,
+        "ci95": 0.0243
+      },
+      "threshold_accuracy": {
+        "mean": 0.6028,
+        "std": 0.0237,
+        "min": 0.55,
+        "max": 0.6273,
+        "ci95": 0.0164
+      },
+      "threshold_leakage_advantage": {
+        "mean": 0.1028,
+        "std": 0.0237,
+        "min": 0.05,
+        "max": 0.1273,
+        "ci95": 0.0164
+      },
+      "defended_accuracy": {
+        "mean": 0.4829,
+        "std": 0.0215,
+        "min": 0.4545,
+        "max": 0.5136,
+        "ci95": 0.0149
+      },
+      "defended_leakage_advantage": {
+        "mean": -0.0171,
+        "std": 0.0215,
+        "min": -0.0455,
+        "max": 0.0136,
+        "ci95": 0.0149
+      },
+      "defended_threshold_accuracy": {
+        "mean": 0.4937,
+        "std": 0.0294,
+        "min": 0.4545,
+        "max": 0.5409,
+        "ci95": 0.0204
+      },
+      "defended_threshold_leakage_advantage": {
+        "mean": -0.0063,
+        "std": 0.0294,
+        "min": -0.0455,
+        "max": 0.0409,
+        "ci95": 0.0204
+      },
+      "defense_gain": {
+        "mean": 0.1472,
+        "std": 0.0328,
+        "min": 0.0864,
+        "max": 0.1864,
+        "ci95": 0.0227
+      }
+    }
+  }
+}

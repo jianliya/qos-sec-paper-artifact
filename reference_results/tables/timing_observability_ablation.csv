@@ -1,0 +1,9 @@
+variant,leakage_advantage,defended_leakage_advantage,defense_gain
+hardened,0.1301,-0.0171,0.1472
+jittered,0.1301,0.0915,0.0386
+masked,0.1301,0.1023,0.0278
+coarse,0.1301,0.1125,0.0176
+hardened_no_padding,0.1301,0.0222,0.108
+hardened_no_mask,0.1301,-0.0171,0.1472
+hardened_no_queue_reset,0.1301,-0.0171,0.1472
+hardened_no_score_suppression,0.1301,-0.0171,0.1472

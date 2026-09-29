@@ -1,0 +1,9 @@
+<!-- semantics: Repeated limited hardware timing validation summary. Use as the main hardware evidence line and interpret it as feasibility-oriented support rather than stable production-grade proof. -->
+
+| metric | raw | coarse_bucket | grouped_release |
+| --- | --- | --- | --- |
+| mean_threshold_accuracy | 0.5312 | 0.5312 | 0.5833 |
+| mean_leakage_advantage | 0.0312 | 0.0312 | 0.0833 |
+| mean_class_gap | 112.2596 | 112.1875 | 112.2596 |
+| mean_effect_size | 0.0253 | -0.0159 | 0.0216 |
+| positive_gap_ratio | 0.6667 | 0.5 | 0.6667 |

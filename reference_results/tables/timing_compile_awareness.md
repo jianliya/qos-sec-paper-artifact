@@ -1,0 +1,10 @@
+<!-- semantics: Lightweight compile-aware timing experiment. Interpret it as engineering-chain support that transpilation outputs can reshape scheduler-visible timing and backend-choice observability, not as the primary paper result. -->
+
+| profile | feature_mode | leakage_advantage | backend_choice_leakage_advantage | defended_leakage_advantage | defense_gain | class_gap |
+| --- | --- | --- | --- | --- | --- | --- |
+| compile_visible | compile_visible | 0.1469 | 0.0797 | -0.0094 | 0.1563 | 0.1115 |
+| logical_only | logical_only | 0.1898 | 0.0797 | -0.0168 | 0.2066 | 0.1115 |
+| shuffled_compile_features | shuffled_compile | 0.182 | 0.0797 | 0.0027 | 0.1793 | 0.1115 |
+| random_matched_features | random_matched | 0.1859 | 0.0797 | 0.007 | 0.1789 | 0.1115 |
+| compile_path_neutralized | compile_visible | 0.118 | 0.0582 | -0.0094 | 0.1274 | 0.0804 |
+| noise_flattened | compile_visible | 0.0824 | 0.0914 | -0.0094 | 0.0918 | 0.0887 |

@@ -1,0 +1,6 @@
+contrast,reference,compare,delta_leakage_advantage,delta_leakage_ci95,delta_backend_choice_leakage_advantage,delta_backend_choice_leakage_ci95,delta_defense_gain,delta_defense_gain_ci95,positive_delta_ratio
+compile_visible_vs_logical_only,compile_visible,logical_only,-0.0055,0.0484,0.0,0.0,-0.0187,0.0576,0.25
+compile_visible_vs_shuffled_compile_features,compile_visible,shuffled_compile_features,0.0273,0.0717,0.0,0.0,0.0071,0.0935,0.625
+compile_visible_vs_random_matched_features,compile_visible,random_matched_features,0.0039,0.0434,0.0,0.0,-0.0015,0.0586,0.5
+compile_visible_vs_compile_path_neutralized,compile_visible,compile_path_neutralized,-0.0086,0.0732,0.0406,0.0551,-0.0086,0.0732,0.375
+compile_visible_vs_noise_flattened,compile_visible,noise_flattened,0.0078,0.0848,0.0219,0.0697,0.0078,0.0848,0.5

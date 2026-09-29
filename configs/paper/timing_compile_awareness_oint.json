@@ -1,0 +1,33 @@
+{
+  "scenario": "timing_compile_awareness",
+  "seeds": [42, 43, 44, 45, 46, 47, 48, 49],
+  "catalog_seed": 0,
+  "benign_jobs": 24,
+  "probe_jobs": 160,
+  "victim_jobs": 14,
+  "baseline_names": ["balanced", "secure_joint", "queue"],
+  "attack_scheduler": "balanced",
+  "defense_scheduler": "secure_joint",
+  "active_workload_profile": "controlled",
+  "workload_profiles": {
+    "controlled": {
+      "pressure_multiplier": 1.0
+    }
+  },
+  "observability_mode": "scheduler_boundary",
+  "masked_mode": "hardened",
+  "reference_profile": "compile_visible",
+  "compile_profiles": [
+    "compile_visible",
+    "logical_only",
+    "shuffled_compile_features",
+    "random_matched_features",
+    "compile_path_neutralized",
+    "noise_flattened"
+  ],
+  "backend_encoding": "onehot",
+  "observation_space": "O_int",
+  "evaluation_split_mode": "grouped_cross_seed",
+  "grouped_split_seed": 2026,
+  "ci_method": "student_t"
+}

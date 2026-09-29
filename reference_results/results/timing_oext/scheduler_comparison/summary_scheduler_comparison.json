@@ -1,0 +1,223 @@
+{
+  "scenario": "timing_scheduler_oext_comparison",
+  "observation_space": "O_ext",
+  "public_feature_set": "wait_only",
+  "schedulers": {
+    "queue": {
+      "metrics": {
+        "accuracy": {
+          "mean": 0.6044,
+          "std": 0.0097,
+          "min": 0.5864,
+          "max": 0.6159,
+          "ci95": 0.0054,
+          "ci95_low": 0.5991,
+          "ci95_high": 0.6098,
+          "ci_method": "student_t"
+        },
+        "leakage_advantage": {
+          "mean": 0.1044,
+          "std": 0.0097,
+          "min": 0.0864,
+          "max": 0.1159,
+          "ci95": 0.0054,
+          "ci95_low": 0.0991,
+          "ci95_high": 0.1098,
+          "ci_method": "student_t"
+        },
+        "class_gap": {
+          "mean": 0.0387,
+          "std": 0.0049,
+          "min": 0.0312,
+          "max": 0.0456,
+          "ci95": 0.0027,
+          "ci95_low": 0.036,
+          "ci95_high": 0.0414,
+          "ci_method": "student_t"
+        }
+      },
+      "scheduler_used_raw": "queue",
+      "num_seeds": 16
+    },
+    "balanced": {
+      "metrics": {
+        "accuracy": {
+          "mean": 0.601,
+          "std": 0.0231,
+          "min": 0.55,
+          "max": 0.6364,
+          "ci95": 0.0127,
+          "ci95_low": 0.5883,
+          "ci95_high": 0.6137,
+          "ci_method": "student_t"
+        },
+        "leakage_advantage": {
+          "mean": 0.101,
+          "std": 0.0231,
+          "min": 0.05,
+          "max": 0.1364,
+          "ci95": 0.0127,
+          "ci95_low": 0.0883,
+          "ci95_high": 0.1137,
+          "ci_method": "student_t"
+        },
+        "class_gap": {
+          "mean": 0.0482,
+          "std": 0.0167,
+          "min": 0.0159,
+          "max": 0.0834,
+          "ci95": 0.0092,
+          "ci95_low": 0.039,
+          "ci95_high": 0.0573,
+          "ci_method": "student_t"
+        }
+      },
+      "scheduler_used_raw": "balanced",
+      "num_seeds": 16
+    },
+    "quality_first": {
+      "metrics": {
+        "accuracy": {
+          "mean": 0.5301,
+          "std": 0.1247,
+          "min": 0.3705,
+          "max": 0.7432,
+          "ci95": 0.0686,
+          "ci95_low": 0.4615,
+          "ci95_high": 0.5987,
+          "ci_method": "student_t"
+        },
+        "leakage_advantage": {
+          "mean": 0.0301,
+          "std": 0.1247,
+          "min": -0.1295,
+          "max": 0.2432,
+          "ci95": 0.0686,
+          "ci95_low": -0.0385,
+          "ci95_high": 0.0987,
+          "ci_method": "student_t"
+        },
+        "class_gap": {
+          "mean": 0.3139,
+          "std": 0.5416,
+          "min": -0.3073,
+          "max": 1.1539,
+          "ci95": 0.298,
+          "ci95_low": 0.0159,
+          "ci95_high": 0.6119,
+          "ci_method": "student_t"
+        }
+      },
+      "scheduler_used_raw": "quality_first",
+      "num_seeds": 16
+    },
+    "isolation": {
+      "metrics": {
+        "accuracy": {
+          "mean": 0.6044,
+          "std": 0.0097,
+          "min": 0.5864,
+          "max": 0.6159,
+          "ci95": 0.0054,
+          "ci95_low": 0.5991,
+          "ci95_high": 0.6098,
+          "ci_method": "student_t"
+        },
+        "leakage_advantage": {
+          "mean": 0.1044,
+          "std": 0.0097,
+          "min": 0.0864,
+          "max": 0.1159,
+          "ci95": 0.0054,
+          "ci95_low": 0.0991,
+          "ci95_high": 0.1098,
+          "ci_method": "student_t"
+        },
+        "class_gap": {
+          "mean": 0.0387,
+          "std": 0.0049,
+          "min": 0.0312,
+          "max": 0.0456,
+          "ci95": 0.0027,
+          "ci95_low": 0.036,
+          "ci95_high": 0.0414,
+          "ci_method": "student_t"
+        }
+      },
+      "scheduler_used_raw": "isolation",
+      "num_seeds": 16
+    },
+    "secure_joint": {
+      "metrics": {
+        "accuracy": {
+          "mean": 0.5581,
+          "std": 0.0305,
+          "min": 0.4932,
+          "max": 0.6205,
+          "ci95": 0.0168,
+          "ci95_low": 0.5413,
+          "ci95_high": 0.5749,
+          "ci_method": "student_t"
+        },
+        "leakage_advantage": {
+          "mean": 0.0581,
+          "std": 0.0305,
+          "min": -0.0068,
+          "max": 0.1205,
+          "ci95": 0.0168,
+          "ci95_low": 0.0413,
+          "ci95_high": 0.0749,
+          "ci_method": "student_t"
+        },
+        "class_gap": {
+          "mean": 0.0566,
+          "std": 0.0247,
+          "min": 0.0266,
+          "max": 0.1002,
+          "ci95": 0.0136,
+          "ci95_low": 0.043,
+          "ci95_high": 0.0702,
+          "ci_method": "student_t"
+        }
+      },
+      "scheduler_used_raw": "secure_joint",
+      "num_seeds": 16
+    },
+    "randomized_backend": {
+      "metrics": {
+        "accuracy": {
+          "mean": 0.5817,
+          "std": 0.0118,
+          "min": 0.5568,
+          "max": 0.5977,
+          "ci95": 0.0065,
+          "ci95_low": 0.5752,
+          "ci95_high": 0.5882,
+          "ci_method": "student_t"
+        },
+        "leakage_advantage": {
+          "mean": 0.0817,
+          "std": 0.0118,
+          "min": 0.0568,
+          "max": 0.0977,
+          "ci95": 0.0065,
+          "ci95_low": 0.0752,
+          "ci95_high": 0.0882,
+          "ci_method": "student_t"
+        },
+        "class_gap": {
+          "mean": 0.4273,
+          "std": 0.0445,
+          "min": 0.3651,
+          "max": 0.5095,
+          "ci95": 0.0245,
+          "ci95_low": 0.4029,
+          "ci95_high": 0.4518,
+          "ci_method": "student_t"
+        }
+      },
+      "scheduler_used_raw": "randomized_backend",
+      "num_seeds": 16
+    }
+  }
+}

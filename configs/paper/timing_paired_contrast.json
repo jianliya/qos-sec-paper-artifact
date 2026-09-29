@@ -1,0 +1,90 @@
+{
+  "scenario": "timing_paired_contrast",
+  "seeds": [42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57],
+  "benign_jobs": 30,
+  "probe_jobs": 220,
+  "victim_jobs": 16,
+  "baseline_names": ["balanced", "secure_joint", "queue"],
+  "attack_scheduler": "balanced",
+  "defense_scheduler": "secure_joint",
+  "observability_mode": "full",
+  "masked_mode": "hardened",
+  "reference_profile": "main_quantum",
+  "paired_contrasts": [
+    {
+      "name": "main_vs_classical_queue",
+      "reference": "main_quantum",
+      "compare": "classical_queue_baseline",
+      "description": "Anti-artifact paired contrast against a classical queue baseline."
+    },
+    {
+      "name": "main_vs_uniform_backend_quality",
+      "reference": "main_quantum",
+      "compare": "uniform_backend_quality",
+      "description": "Primary attribution contrast for backend heterogeneity."
+    },
+    {
+      "name": "main_vs_no_coexecution_sensitivity",
+      "reference": "main_quantum",
+      "compare": "no_coexecution_sensitivity",
+      "description": "Primary attribution contrast for co-execution sensitivity."
+    },
+    {
+      "name": "main_vs_no_calibration_drift",
+      "reference": "main_quantum",
+      "compare": "no_calibration_drift",
+      "description": "Secondary contrast used to justify calibration drift downgrade."
+    },
+    {
+      "name": "main_vs_topology_insensitive",
+      "reference": "main_quantum",
+      "compare": "topology_insensitive",
+      "description": "Secondary contrast used to justify topology-related non-monotonicity."
+    },
+    {
+      "name": "main_vs_compile_path_neutralized",
+      "reference": "main_quantum",
+      "compare": "compile_path_neutralized",
+      "description": "Compile-path contrast testing whether backend-aware compilation and eligibility structure materially shape timing distinguishability."
+    },
+    {
+      "name": "main_vs_noise_flattened",
+      "reference": "main_quantum",
+      "compare": "noise_flattened",
+      "description": "Noise-shaping contrast testing whether backend noise and crosstalk-like variation materially shape timing distinguishability."
+    },
+    {
+      "name": "main_vs_coarse_observability",
+      "reference": "main_quantum",
+      "compare": "coarse_observability_baseline",
+      "description": "Observability-abstraction contrast against coarse-grained scheduler-visible output."
+    },
+    {
+      "name": "main_vs_masked_backend_only",
+      "reference": "main_quantum",
+      "compare": "masked_backend_only_baseline",
+      "description": "Observability-abstraction contrast that hides backend identity but preserves wait and queue signals."
+    },
+    {
+      "name": "main_vs_queue_length_only",
+      "reference": "main_quantum",
+      "compare": "queue_length_only_baseline",
+      "description": "Observability-abstraction contrast that preserves only queue-length-side information."
+    }
+  ],
+  "quantum_ablation_defaults": {
+    "use_backend_quality_variation": true,
+    "use_queue_time_variation": true,
+    "use_backend_utilization_variation": true,
+    "use_backend_size_heterogeneity": true,
+    "use_compile_path_variation": true,
+    "use_noise_shaping_variation": true,
+    "use_eligibility_variation": true,
+    "use_class_dependent_pressure": true,
+    "use_isolation_pressure_boost": true,
+    "use_probe_pressure_discount": true,
+    "scheduler_override": null,
+    "defense_scheduler_override": null,
+    "observability_mode_override": null
+  }
+}

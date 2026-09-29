@@ -1,0 +1,31 @@
+__pycache__/
+*.py[cod]
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+
+build/
+dist/
+*.egg-info/
+
+# Fresh experiment output. Frozen paper data live in reference_results/.
+results/**
+!results/.gitkeep
+
+# Regenerated figures are intentionally separate from the published PDFs.
+figures/generated/
+
+tmp*/
+*.log
+*.pid
+.DS_Store
+Thumbs.db

@@ -1,0 +1,6 @@
+<!-- semantics: Lightweight noise-heterogeneity ablation. Use it to interpret whether backend quality variation amplifies observability, destabilizes it, or mainly shifts victim-side quality under scheduling pressure. -->
+
+| contrast | reference | compare | delta_adv_noise | delta_adv_noise_ci95 | delta_backend_entropy | delta_backend_entropy_ci95 | delta_score_margin_variance | delta_score_margin_variance_ci95 | delta_victim_wait | delta_victim_wait_ci95 | delta_fproxy_shift | delta_fproxy_shift_ci95 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| uniform_noise_vs_moderate_heterogeneity | uniform_noise | moderate_heterogeneity | -0.0125 | 0.0245 | 0.0528 | 0.0337 | -0.0005 | 0.0005 | -0.0058 | 0.0078 | -0.0014 | 0.0029 |
+| uniform_noise_vs_high_drift | uniform_noise | high_drift | -0.0117 | 0.0441 | -0.0143 | 0.0701 | 0.0007 | 0.0005 | 0.0496 | 0.0161 | -0.0061 | 0.0103 |

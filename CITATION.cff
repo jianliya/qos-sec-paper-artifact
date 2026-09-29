@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this artifact, please cite the associated article."
+title: "Reproducibility Artifact for Scheduler-Boundary Observability in Shared Quantum Clouds"
+type: software
+version: 1.0.0
+date-released: 2026-09-28
+license: MIT
+authors:
+  - family-names: Jian
+    given-names: Liya
+  - family-names: Lan
+    given-names: Yuqing
+repository-code: "https://github.com/jianliya/qos-sec-paper-artifact"
+preferred-citation:
+  type: article
+  title: "Scheduler-Boundary Observability in Shared Quantum Clouds: Compilation- and Backend-Conditioned Diagnostics"
+  authors:
+    - family-names: Jian
+      given-names: Liya
+    - family-names: Lan
+      given-names: Yuqing
+  journal: Computation
+  year: 2026
+  volume: "14"
+  issue: "9"
+  doi: "10.3390/computation14090197"

@@ -1,0 +1,10 @@
+panel,label,mean,ci95
+probe_wait,Class A,0.4671,0.0079
+probe_wait,Class B,0.5153,0.007
+probe_wait,High Iso.,0.5096,0.0059
+probe_wait,No Victim,0.4027,0.0059
+inference_accuracy,Raw Accuracy,0.6206,0.025
+inference_accuracy,Restricted Accuracy,0.5018,0.006
+signed_reduction,Raw,0.1206,0.025
+signed_reduction,Restricted,0.0018,0.006
+signed_reduction,Reduction,0.1188,0.0

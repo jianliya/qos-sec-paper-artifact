@@ -1,0 +1,206 @@
+{
+  "analysis": "wait-only classifier sensitivity under leave-one-seed-out evaluation",
+  "independent_groups": 16,
+  "traces_per_class_per_group": 220,
+  "feature": "observed_wait",
+  "normalization": "training-fold mean and population standard deviation only",
+  "models": {
+    "centroid": "nearest linear centroid separator",
+    "logistic": "logistic regression with fixed L2 penalty 0.5*||w||^2",
+    "quadratic_logistic": "same fixed logistic objective over [z, z^2]"
+  },
+  "model_selection": "none; all specifications fixed before inspecting fold results",
+  "input_directory": "D:\\quantum-work\\paper-ccs\\Quantum Computing Advantage Compilation\\supplementary_files\\results\\timing_oext\\wait_only_loso",
+  "input_sha256": {
+    "summary_seed_42.json": "8d684f74de04438972c1256be65eaaaf27de50fbf123c03e78d3ef57d9468b52",
+    "summary_seed_43.json": "4b6326721a5297eae281b5e7afa68f80db2a5919261d26f6933bbefc501ca990",
+    "summary_seed_44.json": "50f0155290528f38bd759837e64b83939bafa27cbbeb173bb8404234a04adacd",
+    "summary_seed_45.json": "821a18db61033a474e89ffbcd09d43d7040a0863c9ba541736fc9fe7aedf4de3",
+    "summary_seed_46.json": "48414367eae042c637060e93724252153af53888628df3a001c451aef5b7f10a",
+    "summary_seed_47.json": "f49d3ddc086f57c3c489c390172f9649fd42f6531c99942326b7a7731ae7f9a0",
+    "summary_seed_48.json": "e7fabc1960ca71010d7a37e1753eba86d0e4b6f253ff22f0e1f41e079a62a6cf",
+    "summary_seed_49.json": "e67bfde2c6215f213a2c6b09a727175ae364be7203ce7b2dbd9a5db7840ca882",
+    "summary_seed_50.json": "a49c8a5301158c50c2ce0f4305fcc051e9b370b414746120fbc928a6a4b99e7c",
+    "summary_seed_51.json": "ace7bdad608a7f6ab432c4ebde691dbf87383836c45da13ad4aa4e25a9c2a2aa",
+    "summary_seed_52.json": "fa1c80483210d35c296b940bdee6e496e9653284a7e21b4077614539969693f0",
+    "summary_seed_53.json": "72e53c051ba54d24e6529f2bbcb34399912ce12a932c9f3b18659cd8d3b5ef40",
+    "summary_seed_54.json": "46371bb70af4218e9fb50a7913be6431a5d277a22a2f056789e1ad13d629132e",
+    "summary_seed_55.json": "c3ace657bb5b256d725fee4ec56515cdce6bf67ac8d3469120cd9bca317d8adb",
+    "summary_seed_56.json": "e562f05977c11c1bc90c0ac1a6fc5f01fc2fca951f14efdd49f068e434b6edc6",
+    "summary_seed_57.json": "a2081aa739b6ecb9545a17d4c13f76e4de13c190fbf87bd69599a6ae56f3a871"
+  },
+  "folds": [
+    {
+      "seed": 42,
+      "centroid": 0.6272727272727273,
+      "logistic": 0.6295454545454545,
+      "quadratic_logistic": 0.6363636363636364
+    },
+    {
+      "seed": 43,
+      "centroid": 0.6,
+      "logistic": 0.6022727272727273,
+      "quadratic_logistic": 0.5977272727272728
+    },
+    {
+      "seed": 44,
+      "centroid": 0.5772727272727273,
+      "logistic": 0.5727272727272728,
+      "quadratic_logistic": 0.5772727272727273
+    },
+    {
+      "seed": 45,
+      "centroid": 0.5727272727272728,
+      "logistic": 0.5704545454545454,
+      "quadratic_logistic": 0.55
+    },
+    {
+      "seed": 46,
+      "centroid": 0.6363636363636364,
+      "logistic": 0.634090909090909,
+      "quadratic_logistic": 0.6409090909090909
+    },
+    {
+      "seed": 47,
+      "centroid": 0.6136363636363636,
+      "logistic": 0.6068181818181818,
+      "quadratic_logistic": 0.6181818181818182
+    },
+    {
+      "seed": 48,
+      "centroid": 0.6272727272727273,
+      "logistic": 0.6295454545454545,
+      "quadratic_logistic": 0.6318181818181818
+    },
+    {
+      "seed": 49,
+      "centroid": 0.6295454545454545,
+      "logistic": 0.6295454545454545,
+      "quadratic_logistic": 0.625
+    },
+    {
+      "seed": 50,
+      "centroid": 0.575,
+      "logistic": 0.575,
+      "quadratic_logistic": 0.5613636363636364
+    },
+    {
+      "seed": 51,
+      "centroid": 0.6,
+      "logistic": 0.6,
+      "quadratic_logistic": 0.6113636363636363
+    },
+    {
+      "seed": 52,
+      "centroid": 0.6,
+      "logistic": 0.6,
+      "quadratic_logistic": 0.5954545454545455
+    },
+    {
+      "seed": 53,
+      "centroid": 0.6090909090909091,
+      "logistic": 0.6068181818181818,
+      "quadratic_logistic": 0.6090909090909091
+    },
+    {
+      "seed": 54,
+      "centroid": 0.55,
+      "logistic": 0.55,
+      "quadratic_logistic": 0.5522727272727272
+    },
+    {
+      "seed": 55,
+      "centroid": 0.6022727272727273,
+      "logistic": 0.6,
+      "quadratic_logistic": 0.6068181818181818
+    },
+    {
+      "seed": 56,
+      "centroid": 0.5886363636363636,
+      "logistic": 0.5886363636363636,
+      "quadratic_logistic": 0.5840909090909091
+    },
+    {
+      "seed": 57,
+      "centroid": 0.6068181818181818,
+      "logistic": 0.6068181818181818,
+      "quadratic_logistic": 0.6136363636363636
+    }
+  ],
+  "summaries": {
+    "centroid": {
+      "mean": 0.6009943181818183,
+      "std": 0.023807202390766776,
+      "ci95_half_width": 0.012685962679212362,
+      "ci95_low": 0.5883083555026059,
+      "ci95_high": 0.6136802808610307
+    },
+    "logistic": {
+      "mean": 0.6001420454545454,
+      "std": 0.02421592419975922,
+      "ci95_half_width": 0.01290375515772169,
+      "ci95_low": 0.5872382902968237,
+      "ci95_high": 0.6130458006122671
+    },
+    "quadratic_logistic": {
+      "mean": 0.6007102272727273,
+      "std": 0.028828345760444633,
+      "ci95_half_width": 0.015361541117584948,
+      "ci95_low": 0.5853486861551424,
+      "ci95_high": 0.6160717683903122
+    }
+  },
+  "paired_differences": {
+    "logistic_minus_centroid": {
+      "mean": -0.0008522727272727432,
+      "std": 0.0024722983139516225,
+      "ci95_half_width": 0.0013173947794400962,
+      "ci95_low": -0.0021696675067128393,
+      "ci95_high": 0.000465122052167353,
+      "fold_deltas": [
+        0.002272727272727204,
+        0.002272727272727315,
+        -0.004545454545454519,
+        -0.002272727272727315,
+        -0.002272727272727315,
+        -0.006818181818181834,
+        0.002272727272727204,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.002272727272727315,
+        0.0,
+        -0.002272727272727315,
+        0.0,
+        0.0
+      ]
+    },
+    "quadratic_logistic_minus_centroid": {
+      "mean": -0.00028409090909090745,
+      "std": 0.00861940120512938,
+      "ci95_half_width": 0.004592954695417599,
+      "ci95_low": -0.004877045604508507,
+      "ci95_high": 0.004308863786326692,
+      "fold_deltas": [
+        0.009090909090909038,
+        -0.002272727272727204,
+        0.0,
+        -0.022727272727272707,
+        0.004545454545454519,
+        0.004545454545454519,
+        0.004545454545454519,
+        -0.004545454545454519,
+        -0.013636363636363558,
+        0.011363636363636354,
+        -0.004545454545454519,
+        0.0,
+        0.002272727272727204,
+        0.004545454545454519,
+        -0.004545454545454519,
+        0.006818181818181834
+      ]
+    }
+  },
+  "provenance_warning": "These archived raw traces must be matched to the manuscript's frozen primary endpoint before their numerical results are inserted into the paper."
+}

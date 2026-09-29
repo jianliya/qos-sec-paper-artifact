@@ -1,0 +1,58 @@
+{
+  "scenario": "timing",
+  "seed": 42,
+  "seeds": [42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57],
+  "benign_jobs": 30,
+  "probe_jobs": 220,
+  "victim_jobs": 16,
+  "baseline_names": ["balanced", "isolation", "secure_joint"],
+  "attack_scheduler": "balanced",
+  "defense_scheduler": "secure_joint",
+  "active_workload_profile": "controlled",
+  "workload_profiles": {
+    "controlled": {
+      "benign_count_scale": 1.0,
+      "probe_count_scale": 1.0,
+      "victim_count_scale": 1.0,
+      "benign_arrival_gap": 0.6,
+      "victim_arrival_gap": 0.75,
+      "probe_arrival_gap": 0.55,
+      "pressure_multiplier": 1.0
+    }
+  },
+  "victim_profiles": {
+    "classA": {
+      "base_qubits": 6,
+      "base_depth": 120,
+      "qubit_jitter_min": 0,
+      "qubit_jitter_max": 0,
+      "depth_jitter_min": -6,
+      "depth_jitter_max": 6,
+      "compile_family_pool": ["random"],
+      "pressure_bias": 0.0
+    },
+    "classB": {
+      "base_qubits": 6,
+      "base_depth": 120,
+      "qubit_jitter_min": 0,
+      "qubit_jitter_max": 0,
+      "depth_jitter_min": -6,
+      "depth_jitter_max": 6,
+      "compile_family_pool": ["mirror"],
+      "pressure_bias": 0.0
+    }
+  },
+  "quantum_ablation_defaults": {
+    "use_class_dependent_pressure": false
+  },
+  "observability_mode": "external_only",
+  "masked_mode": "hardened",
+  "backend_encoding": "onehot",
+  "observation_space": "O_ext",
+  "public_feature_set": "wait_backend",
+  "evaluation_split_mode": "leave_one_seed_out",
+  "grouped_split_seed": 2026,
+  "ci_method": "student_t",
+  "output_dir": "results/timing_pairs/compile_divergent_oext",
+  "output_summary_filename": "summary_multiseed.json"
+}

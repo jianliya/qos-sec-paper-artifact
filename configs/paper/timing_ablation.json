@@ -1,0 +1,22 @@
+{
+  "scenario": "timing_ablation",
+  "seeds": [42, 43, 44, 45, 46, 47, 48, 49],
+  "baseline_names": ["balanced", "secure_joint"],
+  "attack_scheduler": "balanced",
+  "defense_scheduler": "secure_joint",
+  "benign_jobs": 30,
+  "probe_jobs": 220,
+  "victim_jobs": 16,
+  "observability_mode": "full",
+  "masked_mode": "hardened",
+  "timing_ablations": [
+    "hardened",
+    "jittered",
+    "masked",
+    "coarse",
+    "hardened_no_padding",
+    "hardened_no_mask",
+    "hardened_no_queue_reset",
+    "hardened_no_score_suppression"
+  ]
+}

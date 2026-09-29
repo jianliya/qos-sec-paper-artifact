@@ -1,0 +1,5 @@
+<!-- semantics: Auxiliary timing stability family summarizing multi-seed robustness of the defended configuration. -->
+
+| num_seeds | positive_gain_count | positive_gain_ratio | mean_defense_gain | std_defense_gain | min_defense_gain | max_defense_gain |
+| --- | --- | --- | --- | --- | --- | --- |
+| 20 | 20 | 1.0 | 0.1564 | 0.0498 | 0.0727 | 0.2637 |

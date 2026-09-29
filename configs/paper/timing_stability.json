@@ -1,0 +1,31 @@
+{
+  "scenario": "timing_stability",
+  "seeds": [42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61],
+  "baseline_names": ["balanced", "secure_joint"],
+  "attack_scheduler": "balanced",
+  "defense_scheduler": "secure_joint",
+  "benign_jobs": 30,
+  "probe_jobs": 220,
+  "victim_jobs": 16,
+  "active_workload_profile": "controlled",
+  "workload_profiles": {
+    "controlled": {
+      "pressure_multiplier": 1.0
+    },
+    "shared_cloud_heavy": {
+      "benign_count_scale": 1.6,
+      "probe_count_scale": 1.15,
+      "victim_count_scale": 1.1,
+      "benign_arrival_gap": 0.4,
+      "victim_arrival_gap": 0.62,
+      "probe_arrival_gap": 0.46,
+      "benign_burst_every": 3,
+      "benign_burst_extra": 0.55,
+      "benign_depth_bias": 18,
+      "victim_depth_bias": 16,
+      "pressure_multiplier": 1.35
+    }
+  },
+  "observability_mode": "full",
+  "masked_mode": "hardened"
+}

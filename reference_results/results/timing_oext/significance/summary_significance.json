@@ -1,0 +1,1157 @@
+{
+  "scenario": "timing_significance",
+  "evaluation_protocol": {
+    "split_mode": "leave_one_seed_out",
+    "observation_space": "O_ext",
+    "public_feature_set": "wait_only",
+    "attacker_secret_unit": "seed for trace-level grouped LOSO; one held-out victim-family seed for bundle-level proxy"
+  },
+  "observed": {
+    "trace_level": {
+      "raw": {
+        "accuracy": {
+          "mean": 0.601,
+          "std": 0.0231,
+          "min": 0.55,
+          "max": 0.6364,
+          "ci95": 0.0127,
+          "ci95_low": 0.5883,
+          "ci95_high": 0.6137,
+          "ci_method": "student_t"
+        },
+        "leakage_advantage": {
+          "mean": 0.101,
+          "std": 0.0231,
+          "min": 0.05,
+          "max": 0.1364,
+          "ci95": 0.0127,
+          "ci95_low": 0.0883,
+          "ci95_high": 0.1137,
+          "ci_method": "student_t"
+        },
+        "threshold_accuracy": {
+          "mean": 0.601,
+          "std": 0.0231,
+          "min": 0.55,
+          "max": 0.6364,
+          "ci95": 0.0127,
+          "ci95_low": 0.5883,
+          "ci95_high": 0.6137,
+          "ci_method": "student_t"
+        },
+        "threshold_leakage_advantage": {
+          "mean": 0.101,
+          "std": 0.0231,
+          "min": 0.05,
+          "max": 0.1364,
+          "ci95": 0.0127,
+          "ci95_low": 0.0883,
+          "ci95_high": 0.1137,
+          "ci_method": "student_t"
+        }
+      },
+      "defended": {
+        "accuracy": {
+          "mean": 0.5018,
+          "std": 0.011,
+          "min": 0.4841,
+          "max": 0.525,
+          "ci95": 0.006,
+          "ci95_low": 0.4958,
+          "ci95_high": 0.5079,
+          "ci_method": "student_t"
+        },
+        "leakage_advantage": {
+          "mean": 0.0018,
+          "std": 0.011,
+          "min": -0.0159,
+          "max": 0.025,
+          "ci95": 0.006,
+          "ci95_low": -0.0042,
+          "ci95_high": 0.0079,
+          "ci_method": "student_t"
+        },
+        "threshold_accuracy": {
+          "mean": 0.4982,
+          "std": 0.011,
+          "min": 0.475,
+          "max": 0.5159,
+          "ci95": 0.006,
+          "ci95_low": 0.4921,
+          "ci95_high": 0.5042,
+          "ci_method": "student_t"
+        },
+        "threshold_leakage_advantage": {
+          "mean": -0.0018,
+          "std": 0.011,
+          "min": -0.025,
+          "max": 0.0159,
+          "ci95": 0.006,
+          "ci95_low": -0.0079,
+          "ci95_high": 0.0042,
+          "ci_method": "student_t"
+        }
+      },
+      "defense_gain": 0.0992
+    },
+    "bundle_level": {
+      "1": {
+        "raw": {
+          "accuracy": {
+            "mean": 0.5938,
+            "std": 0.3172,
+            "min": 0.0,
+            "max": 1.0,
+            "ci95": 0.1745,
+            "ci95_low": 0.4192,
+            "ci95_high": 0.7683,
+            "ci_method": "student_t"
+          },
+          "leakage_advantage": {
+            "mean": 0.0938,
+            "std": 0.3172,
+            "min": -0.5,
+            "max": 0.5,
+            "ci95": 0.1745,
+            "ci95_low": -0.0808,
+            "ci95_high": 0.2683,
+            "ci_method": "student_t"
+          },
+          "threshold_accuracy": {
+            "mean": 0.4062,
+            "std": 0.3172,
+            "min": 0.0,
+            "max": 1.0,
+            "ci95": 0.1745,
+            "ci95_low": 0.2317,
+            "ci95_high": 0.5808,
+            "ci_method": "student_t"
+          },
+          "threshold_leakage_advantage": {
+            "mean": -0.0938,
+            "std": 0.3172,
+            "min": -0.5,
+            "max": 0.5,
+            "ci95": 0.1745,
+            "ci95_low": -0.2683,
+            "ci95_high": 0.0808,
+            "ci_method": "student_t"
+          },
+          "num_bundle_samples_per_class": 16
+        },
+        "defended": {
+          "accuracy": {
+            "mean": 0.625,
+            "std": 0.2165,
+            "min": 0.5,
+            "max": 1.0,
+            "ci95": 0.1191,
+            "ci95_low": 0.5059,
+            "ci95_high": 0.7441,
+            "ci_method": "student_t"
+          },
+          "leakage_advantage": {
+            "mean": 0.125,
+            "std": 0.2165,
+            "min": 0.0,
+            "max": 0.5,
+            "ci95": 0.1191,
+            "ci95_low": 0.0059,
+            "ci95_high": 0.2441,
+            "ci_method": "student_t"
+          },
+          "threshold_accuracy": {
+            "mean": 0.375,
+            "std": 0.2165,
+            "min": 0.0,
+            "max": 0.5,
+            "ci95": 0.1191,
+            "ci95_low": 0.2559,
+            "ci95_high": 0.4941,
+            "ci_method": "student_t"
+          },
+          "threshold_leakage_advantage": {
+            "mean": -0.125,
+            "std": 0.2165,
+            "min": -0.5,
+            "max": 0.0,
+            "ci95": 0.1191,
+            "ci95_low": -0.2441,
+            "ci95_high": -0.0059,
+            "ci_method": "student_t"
+          },
+          "num_bundle_samples_per_class": 16
+        },
+        "defense_gain": -0.0312
+      },
+      "5": {
+        "raw": {
+          "accuracy": {
+            "mean": 0.375,
+            "std": 0.2795,
+            "min": 0.0,
+            "max": 1.0,
+            "ci95": 0.1538,
+            "ci95_low": 0.2212,
+            "ci95_high": 0.5288,
+            "ci_method": "student_t"
+          },
+          "leakage_advantage": {
+            "mean": -0.125,
+            "std": 0.2795,
+            "min": -0.5,
+            "max": 0.5,
+            "ci95": 0.1538,
+            "ci95_low": -0.2788,
+            "ci95_high": 0.0288,
+            "ci_method": "student_t"
+          },
+          "threshold_accuracy": {
+            "mean": 0.5625,
+            "std": 0.2421,
+            "min": 0.0,
+            "max": 1.0,
+            "ci95": 0.1332,
+            "ci95_low": 0.4293,
+            "ci95_high": 0.6957,
+            "ci_method": "student_t"
+          },
+          "threshold_leakage_advantage": {
+            "mean": 0.0625,
+            "std": 0.2421,
+            "min": -0.5,
+            "max": 0.5,
+            "ci95": 0.1332,
+            "ci95_low": -0.0707,
+            "ci95_high": 0.1957,
+            "ci_method": "student_t"
+          },
+          "num_bundle_samples_per_class": 16
+        },
+        "defended": {
+          "accuracy": {
+            "mean": 0.5625,
+            "std": 0.2997,
+            "min": 0.0,
+            "max": 1.0,
+            "ci95": 0.1649,
+            "ci95_low": 0.3976,
+            "ci95_high": 0.7274,
+            "ci_method": "student_t"
+          },
+          "leakage_advantage": {
+            "mean": 0.0625,
+            "std": 0.2997,
+            "min": -0.5,
+            "max": 0.5,
+            "ci95": 0.1649,
+            "ci95_low": -0.1024,
+            "ci95_high": 0.2274,
+            "ci_method": "student_t"
+          },
+          "threshold_accuracy": {
+            "mean": 0.4062,
+            "std": 0.2633,
+            "min": 0.0,
+            "max": 1.0,
+            "ci95": 0.1449,
+            "ci95_low": 0.2614,
+            "ci95_high": 0.5511,
+            "ci_method": "student_t"
+          },
+          "threshold_leakage_advantage": {
+            "mean": -0.0938,
+            "std": 0.2633,
+            "min": -0.5,
+            "max": 0.5,
+            "ci95": 0.1449,
+            "ci95_low": -0.2386,
+            "ci95_high": 0.0511,
+            "ci_method": "student_t"
+          },
+          "num_bundle_samples_per_class": 16
+        },
+        "defense_gain": -0.1875
+      },
+      "10": {
+        "raw": {
+          "accuracy": {
+            "mean": 0.4688,
+            "std": 0.4134,
+            "min": 0.0,
+            "max": 1.0,
+            "ci95": 0.2275,
+            "ci95_low": 0.2413,
+            "ci95_high": 0.6962,
+            "ci_method": "student_t"
+          },
+          "leakage_advantage": {
+            "mean": -0.0312,
+            "std": 0.4134,
+            "min": -0.5,
+            "max": 0.5,
+            "ci95": 0.2275,
+            "ci95_low": -0.2587,
+            "ci95_high": 0.1962,
+            "ci_method": "student_t"
+          },
+          "threshold_accuracy": {
+            "mean": 0.5,
+            "std": 0.3062,
+            "min": 0.0,
+            "max": 1.0,
+            "ci95": 0.1685,
+            "ci95_low": 0.3315,
+            "ci95_high": 0.6685,
+            "ci_method": "student_t"
+          },
+          "threshold_leakage_advantage": {
+            "mean": 0.0,
+            "std": 0.3062,
+            "min": -0.5,
+            "max": 0.5,
+            "ci95": 0.1685,
+            "ci95_low": -0.1685,
+            "ci95_high": 0.1685,
+            "ci_method": "student_t"
+          },
+          "num_bundle_samples_per_class": 16
+        },
+        "defended": {
+          "accuracy": {
+            "mean": 0.5938,
+            "std": 0.2633,
+            "min": 0.0,
+            "max": 1.0,
+            "ci95": 0.1449,
+            "ci95_low": 0.4489,
+            "ci95_high": 0.7386,
+            "ci_method": "student_t"
+          },
+          "leakage_advantage": {
+            "mean": 0.0938,
+            "std": 0.2633,
+            "min": -0.5,
+            "max": 0.5,
+            "ci95": 0.1449,
+            "ci95_low": -0.0511,
+            "ci95_high": 0.2386,
+            "ci_method": "student_t"
+          },
+          "threshold_accuracy": {
+            "mean": 0.4062,
+            "std": 0.2633,
+            "min": 0.0,
+            "max": 1.0,
+            "ci95": 0.1449,
+            "ci95_low": 0.2614,
+            "ci95_high": 0.5511,
+            "ci_method": "student_t"
+          },
+          "threshold_leakage_advantage": {
+            "mean": -0.0938,
+            "std": 0.2633,
+            "min": -0.5,
+            "max": 0.5,
+            "ci95": 0.1449,
+            "ci95_low": -0.2386,
+            "ci95_high": 0.0511,
+            "ci_method": "student_t"
+          },
+          "num_bundle_samples_per_class": 16
+        },
+        "defense_gain": -0.125
+      },
+      "20": {
+        "raw": {
+          "accuracy": {
+            "mean": 0.6562,
+            "std": 0.2915,
+            "min": 0.0,
+            "max": 1.0,
+            "ci95": 0.1604,
+            "ci95_low": 0.4959,
+            "ci95_high": 0.8166,
+            "ci_method": "student_t"
+          },
+          "leakage_advantage": {
+            "mean": 0.1562,
+            "std": 0.2915,
+            "min": -0.5,
+            "max": 0.5,
+            "ci95": 0.1604,
+            "ci95_low": -0.0041,
+            "ci95_high": 0.3166,
+            "ci_method": "student_t"
+          },
+          "threshold_accuracy": {
+            "mean": 0.6562,
+            "std": 0.2915,
+            "min": 0.0,
+            "max": 1.0,
+            "ci95": 0.1604,
+            "ci95_low": 0.4959,
+            "ci95_high": 0.8166,
+            "ci_method": "student_t"
+          },
+          "threshold_leakage_advantage": {
+            "mean": 0.1562,
+            "std": 0.2915,
+            "min": -0.5,
+            "max": 0.5,
+            "ci95": 0.1604,
+            "ci95_low": -0.0041,
+            "ci95_high": 0.3166,
+            "ci_method": "student_t"
+          },
+          "num_bundle_samples_per_class": 16
+        },
+        "defended": {
+          "accuracy": {
+            "mean": 0.5938,
+            "std": 0.2633,
+            "min": 0.0,
+            "max": 1.0,
+            "ci95": 0.1449,
+            "ci95_low": 0.4489,
+            "ci95_high": 0.7386,
+            "ci_method": "student_t"
+          },
+          "leakage_advantage": {
+            "mean": 0.0938,
+            "std": 0.2633,
+            "min": -0.5,
+            "max": 0.5,
+            "ci95": 0.1449,
+            "ci95_low": -0.0511,
+            "ci95_high": 0.2386,
+            "ci_method": "student_t"
+          },
+          "threshold_accuracy": {
+            "mean": 0.4062,
+            "std": 0.2633,
+            "min": 0.0,
+            "max": 1.0,
+            "ci95": 0.1449,
+            "ci95_low": 0.2614,
+            "ci95_high": 0.5511,
+            "ci_method": "student_t"
+          },
+          "threshold_leakage_advantage": {
+            "mean": -0.0938,
+            "std": 0.2633,
+            "min": -0.5,
+            "max": 0.5,
+            "ci95": 0.1449,
+            "ci95_low": -0.2386,
+            "ci95_high": 0.0511,
+            "ci_method": "student_t"
+          },
+          "num_bundle_samples_per_class": 16
+        },
+        "defense_gain": 0.0624
+      },
+      "50": {
+        "raw": {
+          "accuracy": {
+            "mean": 0.8125,
+            "std": 0.2421,
+            "min": 0.5,
+            "max": 1.0,
+            "ci95": 0.1332,
+            "ci95_low": 0.6793,
+            "ci95_high": 0.9457,
+            "ci_method": "student_t"
+          },
+          "leakage_advantage": {
+            "mean": 0.3125,
+            "std": 0.2421,
+            "min": 0.0,
+            "max": 0.5,
+            "ci95": 0.1332,
+            "ci95_low": 0.1793,
+            "ci95_high": 0.4457,
+            "ci_method": "student_t"
+          },
+          "threshold_accuracy": {
+            "mean": 0.7812,
+            "std": 0.248,
+            "min": 0.5,
+            "max": 1.0,
+            "ci95": 0.1365,
+            "ci95_low": 0.6448,
+            "ci95_high": 0.9177,
+            "ci_method": "student_t"
+          },
+          "threshold_leakage_advantage": {
+            "mean": 0.2812,
+            "std": 0.248,
+            "min": 0.0,
+            "max": 0.5,
+            "ci95": 0.1365,
+            "ci95_low": 0.1448,
+            "ci95_high": 0.4177,
+            "ci_method": "student_t"
+          },
+          "num_bundle_samples_per_class": 16
+        },
+        "defended": {
+          "accuracy": {
+            "mean": 0.6562,
+            "std": 0.3409,
+            "min": 0.0,
+            "max": 1.0,
+            "ci95": 0.1876,
+            "ci95_low": 0.4687,
+            "ci95_high": 0.8438,
+            "ci_method": "student_t"
+          },
+          "leakage_advantage": {
+            "mean": 0.1562,
+            "std": 0.3409,
+            "min": -0.5,
+            "max": 0.5,
+            "ci95": 0.1876,
+            "ci95_low": -0.0313,
+            "ci95_high": 0.3438,
+            "ci_method": "student_t"
+          },
+          "threshold_accuracy": {
+            "mean": 0.3125,
+            "std": 0.348,
+            "min": 0.0,
+            "max": 1.0,
+            "ci95": 0.1915,
+            "ci95_low": 0.121,
+            "ci95_high": 0.504,
+            "ci_method": "student_t"
+          },
+          "threshold_leakage_advantage": {
+            "mean": -0.1875,
+            "std": 0.348,
+            "min": -0.5,
+            "max": 0.5,
+            "ci95": 0.1915,
+            "ci95_low": -0.379,
+            "ci95_high": 0.004,
+            "ci_method": "student_t"
+          },
+          "num_bundle_samples_per_class": 16
+        },
+        "defense_gain": 0.1563
+      },
+      "220": {
+        "raw": {
+          "accuracy": {
+            "mean": 0.9375,
+            "std": 0.1654,
+            "min": 0.5,
+            "max": 1.0,
+            "ci95": 0.091,
+            "ci95_low": 0.8465,
+            "ci95_high": 1.0285,
+            "ci_method": "student_t"
+          },
+          "leakage_advantage": {
+            "mean": 0.4375,
+            "std": 0.1654,
+            "min": 0.0,
+            "max": 0.5,
+            "ci95": 0.091,
+            "ci95_low": 0.3465,
+            "ci95_high": 0.5285,
+            "ci_method": "student_t"
+          },
+          "threshold_accuracy": {
+            "mean": 0.9375,
+            "std": 0.1654,
+            "min": 0.5,
+            "max": 1.0,
+            "ci95": 0.091,
+            "ci95_low": 0.8465,
+            "ci95_high": 1.0285,
+            "ci_method": "student_t"
+          },
+          "threshold_leakage_advantage": {
+            "mean": 0.4375,
+            "std": 0.1654,
+            "min": 0.0,
+            "max": 0.5,
+            "ci95": 0.091,
+            "ci95_low": 0.3465,
+            "ci95_high": 0.5285,
+            "ci_method": "student_t"
+          },
+          "num_bundle_samples_per_class": 16
+        },
+        "defended": {
+          "accuracy": {
+            "mean": 0.6562,
+            "std": 0.2318,
+            "min": 0.5,
+            "max": 1.0,
+            "ci95": 0.1275,
+            "ci95_low": 0.5287,
+            "ci95_high": 0.7838,
+            "ci_method": "student_t"
+          },
+          "leakage_advantage": {
+            "mean": 0.1562,
+            "std": 0.2318,
+            "min": 0.0,
+            "max": 0.5,
+            "ci95": 0.1275,
+            "ci95_low": 0.0287,
+            "ci95_high": 0.2838,
+            "ci_method": "student_t"
+          },
+          "threshold_accuracy": {
+            "mean": 0.5,
+            "std": 0.433,
+            "min": 0.0,
+            "max": 1.0,
+            "ci95": 0.2383,
+            "ci95_low": 0.2617,
+            "ci95_high": 0.7383,
+            "ci_method": "student_t"
+          },
+          "threshold_leakage_advantage": {
+            "mean": 0.0,
+            "std": 0.433,
+            "min": -0.5,
+            "max": 0.5,
+            "ci95": 0.2383,
+            "ci95_low": -0.2383,
+            "ci95_high": 0.2383,
+            "ci_method": "student_t"
+          },
+          "num_bundle_samples_per_class": 16
+        },
+        "defense_gain": 0.2813
+      }
+    }
+  },
+  "permutation": {
+    "iterations": 1000,
+    "seed": 20260724,
+    "trace_level": {
+      "raw_leakage_advantage": {
+        "observed": 0.101,
+        "null_distribution": {
+          "mean": -0.0005,
+          "std": 0.0489,
+          "min": -0.101,
+          "max": 0.0791,
+          "ci95_low": -0.101,
+          "ci95_high": 0.0538
+        },
+        "p_value_two_sided": 0.1009
+      },
+      "defended_leakage_advantage": {
+        "observed": 0.0018,
+        "null_distribution": {
+          "mean": 0.0001,
+          "std": 0.0041,
+          "min": -0.0078,
+          "max": 0.0072,
+          "ci95_low": -0.0075,
+          "ci95_high": 0.0058
+        },
+        "p_value_two_sided": 0.7682
+      },
+      "defense_gain": {
+        "observed": 0.0992,
+        "null_distribution": {
+          "mean": -0.0006,
+          "std": 0.049,
+          "min": -0.1074,
+          "max": 0.077,
+          "ci95_low": -0.104,
+          "ci95_high": 0.0554
+        },
+        "p_value_two_sided": 0.0629
+      }
+    },
+    "bundle_level": {
+      "1": {
+        "raw_leakage_advantage": {
+          "observed": 0.0938,
+          "null_distribution": {
+            "mean": -0.0044,
+            "std": 0.1262,
+            "min": -0.2188,
+            "max": 0.2188,
+            "ci95_low": -0.2188,
+            "ci95_high": 0.1562
+          },
+          "p_value_two_sided": 0.6803
+        },
+        "defended_leakage_advantage": {
+          "observed": 0.125,
+          "null_distribution": {
+            "mean": -0.0009,
+            "std": 0.0996,
+            "min": -0.125,
+            "max": 0.125,
+            "ci95_low": -0.125,
+            "ci95_high": 0.125
+          },
+          "p_value_two_sided": 0.5135
+        },
+        "defense_gain": {
+          "observed": -0.0312,
+          "null_distribution": {
+            "mean": -0.0034,
+            "std": 0.1573,
+            "min": -0.3438,
+            "max": 0.3438,
+            "ci95_low": -0.2813,
+            "ci95_high": 0.2812
+          },
+          "p_value_two_sided": 1.0
+        }
+      },
+      "5": {
+        "raw_leakage_advantage": {
+          "observed": -0.125,
+          "null_distribution": {
+            "mean": -0.0021,
+            "std": 0.1112,
+            "min": -0.4062,
+            "max": 0.3438,
+            "ci95_low": -0.2812,
+            "ci95_high": 0.1875
+          },
+          "p_value_two_sided": 0.2737
+        },
+        "defended_leakage_advantage": {
+          "observed": 0.0625,
+          "null_distribution": {
+            "mean": -0.0028,
+            "std": 0.1128,
+            "min": -0.1562,
+            "max": 0.25,
+            "ci95_low": -0.1562,
+            "ci95_high": 0.1875
+          },
+          "p_value_two_sided": 0.9001
+        },
+        "defense_gain": {
+          "observed": -0.1875,
+          "null_distribution": {
+            "mean": 0.0007,
+            "std": 0.1423,
+            "min": -0.5,
+            "max": 0.4062,
+            "ci95_low": -0.3124,
+            "ci95_high": 0.25
+          },
+          "p_value_two_sided": 0.1828
+        }
+      },
+      "10": {
+        "raw_leakage_advantage": {
+          "observed": -0.0312,
+          "null_distribution": {
+            "mean": 0.0037,
+            "std": 0.1384,
+            "min": -0.4375,
+            "max": 0.2812,
+            "ci95_low": -0.3125,
+            "ci95_high": 0.2188
+          },
+          "p_value_two_sided": 0.9101
+        },
+        "defended_leakage_advantage": {
+          "observed": 0.0938,
+          "null_distribution": {
+            "mean": -0.0005,
+            "std": 0.1015,
+            "min": -0.25,
+            "max": 0.1562,
+            "ci95_low": -0.2188,
+            "ci95_high": 0.1562
+          },
+          "p_value_two_sided": 0.4925
+        },
+        "defense_gain": {
+          "observed": -0.125,
+          "null_distribution": {
+            "mean": 0.0042,
+            "std": 0.1616,
+            "min": -0.5,
+            "max": 0.4687,
+            "ci95_low": -0.3438,
+            "ci95_high": 0.3124
+          },
+          "p_value_two_sided": 0.4845
+        }
+      },
+      "20": {
+        "raw_leakage_advantage": {
+          "observed": 0.1562,
+          "null_distribution": {
+            "mean": 0.0027,
+            "std": 0.1061,
+            "min": -0.3438,
+            "max": 0.2188,
+            "ci95_low": -0.2188,
+            "ci95_high": 0.1875
+          },
+          "p_value_two_sided": 0.1918
+        },
+        "defended_leakage_advantage": {
+          "observed": 0.0938,
+          "null_distribution": {
+            "mean": -0.0003,
+            "std": 0.0949,
+            "min": -0.1875,
+            "max": 0.1875,
+            "ci95_low": -0.1875,
+            "ci95_high": 0.1562
+          },
+          "p_value_two_sided": 0.5415
+        },
+        "defense_gain": {
+          "observed": 0.0624,
+          "null_distribution": {
+            "mean": 0.003,
+            "std": 0.098,
+            "min": -0.3438,
+            "max": 0.3125,
+            "ci95_low": -0.2187,
+            "ci95_high": 0.1875
+          },
+          "p_value_two_sided": 0.6144
+        }
+      },
+      "50": {
+        "raw_leakage_advantage": {
+          "observed": 0.3125,
+          "null_distribution": {
+            "mean": 0.0015,
+            "std": 0.1235,
+            "min": -0.4062,
+            "max": 0.2812,
+            "ci95_low": -0.2812,
+            "ci95_high": 0.1883
+          },
+          "p_value_two_sided": 0.02
+        },
+        "defended_leakage_advantage": {
+          "observed": 0.1562,
+          "null_distribution": {
+            "mean": -0.0035,
+            "std": 0.1278,
+            "min": -0.4375,
+            "max": 0.2812,
+            "ci95_low": -0.3438,
+            "ci95_high": 0.2188
+          },
+          "p_value_two_sided": 0.2268
+        },
+        "defense_gain": {
+          "observed": 0.1563,
+          "null_distribution": {
+            "mean": 0.005,
+            "std": 0.1627,
+            "min": -0.5313,
+            "max": 0.5937,
+            "ci95_low": -0.3437,
+            "ci95_high": 0.3437
+          },
+          "p_value_two_sided": 0.3037
+        }
+      },
+      "220": {
+        "raw_leakage_advantage": {
+          "observed": 0.4375,
+          "null_distribution": {
+            "mean": 0.0033,
+            "std": 0.1653,
+            "min": -0.5,
+            "max": 0.375,
+            "ci95_low": -0.4062,
+            "ci95_high": 0.25
+          },
+          "p_value_two_sided": 0.016
+        },
+        "defended_leakage_advantage": {
+          "observed": 0.1562,
+          "null_distribution": {
+            "mean": 0.0009,
+            "std": 0.1217,
+            "min": -0.4062,
+            "max": 0.25,
+            "ci95_low": -0.2812,
+            "ci95_high": 0.1875
+          },
+          "p_value_two_sided": 0.2348
+        },
+        "defense_gain": {
+          "observed": 0.2813,
+          "null_distribution": {
+            "mean": 0.0023,
+            "std": 0.2028,
+            "min": -0.7188,
+            "max": 0.5625,
+            "ci95_low": -0.4383,
+            "ci95_high": 0.3446
+          },
+          "p_value_two_sided": 0.1688
+        }
+      }
+    }
+  },
+  "cluster_bootstrap": {
+    "iterations": 1000,
+    "seed": 20260725,
+    "trace_level": {
+      "raw_leakage_advantage": {
+        "observed": 0.101,
+        "bootstrap_distribution": {
+          "mean": 0.101,
+          "std": 0.0056,
+          "min": 0.0825,
+          "max": 0.1166,
+          "ci95_low": 0.0898,
+          "ci95_high": 0.1114
+        }
+      },
+      "defended_leakage_advantage": {
+        "observed": 0.0018,
+        "bootstrap_distribution": {
+          "mean": 0.0015,
+          "std": 0.0033,
+          "min": -0.0107,
+          "max": 0.0111,
+          "ci95_low": -0.007,
+          "ci95_high": 0.0072
+        }
+      },
+      "defense_gain": {
+        "observed": 0.0992,
+        "bootstrap_distribution": {
+          "mean": 0.0994,
+          "std": 0.007,
+          "min": 0.078,
+          "max": 0.125,
+          "ci95_low": 0.0864,
+          "ci95_high": 0.1143
+        }
+      }
+    },
+    "bundle_level": {
+      "1": {
+        "raw_leakage_advantage": {
+          "observed": 0.0938,
+          "bootstrap_distribution": {
+            "mean": 0.0631,
+            "std": 0.1134,
+            "min": -0.3125,
+            "max": 0.3125,
+            "ci95_low": -0.1883,
+            "ci95_high": 0.25
+          }
+        },
+        "defended_leakage_advantage": {
+          "observed": 0.125,
+          "bootstrap_distribution": {
+            "mean": 0.1268,
+            "std": 0.0575,
+            "min": 0.0,
+            "max": 0.3125,
+            "ci95_low": 0.0,
+            "ci95_high": 0.25
+          }
+        },
+        "defense_gain": {
+          "observed": -0.0312,
+          "bootstrap_distribution": {
+            "mean": -0.0637,
+            "std": 0.1243,
+            "min": -0.4375,
+            "max": 0.25,
+            "ci95_low": -0.3437,
+            "ci95_high": 0.1874
+          }
+        }
+      },
+      "5": {
+        "raw_leakage_advantage": {
+          "observed": -0.125,
+          "bootstrap_distribution": {
+            "mean": 0.0122,
+            "std": 0.1302,
+            "min": -0.4688,
+            "max": 0.4062,
+            "ci95_low": -0.25,
+            "ci95_high": 0.2508
+          }
+        },
+        "defended_leakage_advantage": {
+          "observed": 0.0625,
+          "bootstrap_distribution": {
+            "mean": 0.0984,
+            "std": 0.0977,
+            "min": -0.25,
+            "max": 0.3438,
+            "ci95_low": -0.1562,
+            "ci95_high": 0.2508
+          }
+        },
+        "defense_gain": {
+          "observed": -0.1875,
+          "bootstrap_distribution": {
+            "mean": -0.0862,
+            "std": 0.1588,
+            "min": -0.5938,
+            "max": 0.5,
+            "ci95_low": -0.375,
+            "ci95_high": 0.2812
+          }
+        }
+      },
+      "10": {
+        "raw_leakage_advantage": {
+          "observed": -0.0312,
+          "bootstrap_distribution": {
+            "mean": 0.0247,
+            "std": 0.1417,
+            "min": -0.4688,
+            "max": 0.3125,
+            "ci95_low": -0.3438,
+            "ci95_high": 0.25
+          }
+        },
+        "defended_leakage_advantage": {
+          "observed": 0.0938,
+          "bootstrap_distribution": {
+            "mean": 0.0985,
+            "std": 0.0862,
+            "min": -0.25,
+            "max": 0.375,
+            "ci95_low": -0.0938,
+            "ci95_high": 0.25
+          }
+        },
+        "defense_gain": {
+          "observed": -0.125,
+          "bootstrap_distribution": {
+            "mean": -0.0737,
+            "std": 0.1584,
+            "min": -0.625,
+            "max": 0.375,
+            "ci95_low": -0.4062,
+            "ci95_high": 0.2187
+          }
+        }
+      },
+      "20": {
+        "raw_leakage_advantage": {
+          "observed": 0.1562,
+          "bootstrap_distribution": {
+            "mean": 0.176,
+            "std": 0.0992,
+            "min": -0.2812,
+            "max": 0.4375,
+            "ci95_low": -0.0625,
+            "ci95_high": 0.3438
+          }
+        },
+        "defended_leakage_advantage": {
+          "observed": 0.0938,
+          "bootstrap_distribution": {
+            "mean": 0.0861,
+            "std": 0.0957,
+            "min": -0.3438,
+            "max": 0.3438,
+            "ci95_low": -0.1562,
+            "ci95_high": 0.25
+          }
+        },
+        "defense_gain": {
+          "observed": 0.0624,
+          "bootstrap_distribution": {
+            "mean": 0.0899,
+            "std": 0.1027,
+            "min": -0.3438,
+            "max": 0.6562,
+            "ci95_low": -0.0938,
+            "ci95_high": 0.3124
+          }
+        }
+      },
+      "50": {
+        "raw_leakage_advantage": {
+          "observed": 0.3125,
+          "bootstrap_distribution": {
+            "mean": 0.3184,
+            "std": 0.0676,
+            "min": 0.125,
+            "max": 0.4688,
+            "ci95_low": 0.1875,
+            "ci95_high": 0.4375
+          }
+        },
+        "defended_leakage_advantage": {
+          "observed": 0.1562,
+          "bootstrap_distribution": {
+            "mean": 0.1523,
+            "std": 0.1059,
+            "min": -0.3125,
+            "max": 0.4375,
+            "ci95_low": -0.0625,
+            "ci95_high": 0.3438
+          }
+        },
+        "defense_gain": {
+          "observed": 0.1563,
+          "bootstrap_distribution": {
+            "mean": 0.1661,
+            "std": 0.121,
+            "min": -0.1876,
+            "max": 0.625,
+            "ci95_low": -0.0625,
+            "ci95_high": 0.4062
+          }
+        }
+      },
+      "220": {
+        "raw_leakage_advantage": {
+          "observed": 0.4375,
+          "bootstrap_distribution": {
+            "mean": 0.4645,
+            "std": 0.033,
+            "min": 0.3438,
+            "max": 0.5,
+            "ci95_low": 0.4062,
+            "ci95_high": 0.5
+          }
+        },
+        "defended_leakage_advantage": {
+          "observed": 0.1562,
+          "bootstrap_distribution": {
+            "mean": 0.1639,
+            "std": 0.081,
+            "min": -0.125,
+            "max": 0.4062,
+            "ci95_low": -0.0312,
+            "ci95_high": 0.3125
+          }
+        },
+        "defense_gain": {
+          "observed": 0.2813,
+          "bootstrap_distribution": {
+            "mean": 0.3005,
+            "std": 0.0946,
+            "min": -0.0312,
+            "max": 0.625,
+            "ci95_low": 0.125,
+            "ci95_high": 0.5
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,289 @@
+{
+  "num_seeds": 16,
+  "seeds": [
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57
+  ],
+  "metrics": {
+    "classA_mean_wait": {
+      "mean": 0.4671,
+      "std": 0.0144,
+      "min": 0.4401,
+      "max": 0.4929,
+      "ci95": 0.0079,
+      "ci95_low": 0.4592,
+      "ci95_high": 0.4751,
+      "ci_method": "student_t"
+    },
+    "classB_mean_wait": {
+      "mean": 0.5153,
+      "std": 0.0126,
+      "min": 0.4919,
+      "max": 0.5405,
+      "ci95": 0.007,
+      "ci95_low": 0.5083,
+      "ci95_high": 0.5222,
+      "ci_method": "student_t"
+    },
+    "highIsolation_mean_wait": {
+      "mean": 0.5096,
+      "std": 0.0108,
+      "min": 0.4872,
+      "max": 0.526,
+      "ci95": 0.0059,
+      "ci95_low": 0.5037,
+      "ci95_high": 0.5155,
+      "ci_method": "student_t"
+    },
+    "noVictim_mean_wait": {
+      "mean": 0.4027,
+      "std": 0.0106,
+      "min": 0.3867,
+      "max": 0.4307,
+      "ci95": 0.0059,
+      "ci95_low": 0.3969,
+      "ci95_high": 0.4086,
+      "ci_method": "student_t"
+    },
+    "class_gap": {
+      "mean": 0.0482,
+      "std": 0.0167,
+      "min": 0.0159,
+      "max": 0.0834,
+      "ci95": 0.0092,
+      "ci95_low": 0.039,
+      "ci95_high": 0.0573,
+      "ci_method": "student_t"
+    },
+    "highIsolation_delta_from_classA": {
+      "mean": 0.0425,
+      "std": 0.0148,
+      "min": 0.0217,
+      "max": 0.0681,
+      "ci95": 0.0081,
+      "ci95_low": 0.0344,
+      "ci95_high": 0.0506,
+      "ci_method": "student_t"
+    },
+    "classA_minus_noVictim": {
+      "mean": 0.0644,
+      "std": 0.0191,
+      "min": 0.0309,
+      "max": 0.0924,
+      "ci95": 0.0105,
+      "ci95_low": 0.0539,
+      "ci95_high": 0.0749,
+      "ci_method": "student_t"
+    },
+    "classB_minus_noVictim": {
+      "mean": 0.1125,
+      "std": 0.0144,
+      "min": 0.0905,
+      "max": 0.1366,
+      "ci95": 0.0079,
+      "ci95_low": 0.1046,
+      "ci95_high": 0.1205,
+      "ci_method": "student_t"
+    },
+    "highIsolation_minus_noVictim": {
+      "mean": 0.1069,
+      "std": 0.0185,
+      "min": 0.0718,
+      "max": 0.1393,
+      "ci95": 0.0102,
+      "ci95_low": 0.0967,
+      "ci95_high": 0.1171,
+      "ci_method": "student_t"
+    },
+    "accuracy": {
+      "mean": 0.6206,
+      "std": 0.0454,
+      "min": 0.5591,
+      "max": 0.7023,
+      "ci95": 0.025,
+      "ci95_low": 0.5956,
+      "ci95_high": 0.6456,
+      "ci_method": "student_t"
+    },
+    "leakage_advantage": {
+      "mean": 0.1206,
+      "std": 0.0454,
+      "min": 0.0591,
+      "max": 0.2023,
+      "ci95": 0.025,
+      "ci95_low": 0.0956,
+      "ci95_high": 0.1456,
+      "ci_method": "student_t"
+    },
+    "threshold_accuracy": {
+      "mean": 0.601,
+      "std": 0.0231,
+      "min": 0.55,
+      "max": 0.6364,
+      "ci95": 0.0127,
+      "ci95_low": 0.5883,
+      "ci95_high": 0.6137,
+      "ci_method": "student_t"
+    },
+    "threshold_leakage_advantage": {
+      "mean": 0.101,
+      "std": 0.0231,
+      "min": 0.05,
+      "max": 0.1364,
+      "ci95": 0.0127,
+      "ci95_low": 0.0883,
+      "ci95_high": 0.1137,
+      "ci_method": "student_t"
+    },
+    "defended_accuracy": {
+      "mean": 0.5018,
+      "std": 0.011,
+      "min": 0.4841,
+      "max": 0.525,
+      "ci95": 0.006,
+      "ci95_low": 0.4958,
+      "ci95_high": 0.5079,
+      "ci_method": "student_t"
+    },
+    "defended_leakage_advantage": {
+      "mean": 0.0018,
+      "std": 0.011,
+      "min": -0.0159,
+      "max": 0.025,
+      "ci95": 0.006,
+      "ci95_low": -0.0042,
+      "ci95_high": 0.0079,
+      "ci_method": "student_t"
+    },
+    "defended_threshold_accuracy": {
+      "mean": 0.4982,
+      "std": 0.011,
+      "min": 0.475,
+      "max": 0.5159,
+      "ci95": 0.006,
+      "ci95_low": 0.4921,
+      "ci95_high": 0.5042,
+      "ci_method": "student_t"
+    },
+    "defended_threshold_leakage_advantage": {
+      "mean": -0.0018,
+      "std": 0.011,
+      "min": -0.025,
+      "max": 0.0159,
+      "ci95": 0.006,
+      "ci95_low": -0.0079,
+      "ci95_high": 0.0042,
+      "ci_method": "student_t"
+    },
+    "defense_gain": {
+      "mean": 0.1188,
+      "std": 0.0,
+      "min": 0.1188,
+      "max": 0.1188,
+      "ci95": 0.0,
+      "ci95_low": 0.1188,
+      "ci95_high": 0.1188,
+      "ci_method": "student_t"
+    },
+    "tenant_wait_dispersion_raw": {
+      "mean": 0.538,
+      "std": 0.1694,
+      "min": 0.2721,
+      "max": 0.7875,
+      "ci95": 0.0932,
+      "ci95_low": 0.4447,
+      "ci95_high": 0.6312,
+      "ci_method": "student_t"
+    },
+    "tenant_wait_fairness_raw": {
+      "mean": 0.9259,
+      "std": 0.025,
+      "min": 0.8902,
+      "max": 0.9737,
+      "ci95": 0.0137,
+      "ci95_low": 0.9122,
+      "ci95_high": 0.9397,
+      "ci_method": "student_t"
+    },
+    "tenant_wait_dispersion_defended": {
+      "mean": 0.5228,
+      "std": 0.0818,
+      "min": 0.3719,
+      "max": 0.6642,
+      "ci95": 0.045,
+      "ci95_low": 0.4778,
+      "ci95_high": 0.5678,
+      "ci_method": "student_t"
+    },
+    "tenant_wait_fairness_defended": {
+      "mean": 0.9426,
+      "std": 0.0085,
+      "min": 0.9303,
+      "max": 0.9555,
+      "ci95": 0.0047,
+      "ci95_low": 0.9379,
+      "ci95_high": 0.9473,
+      "ci_method": "student_t"
+    },
+    "sensitive_mean_wait_proxy_raw": {
+      "mean": 0.0,
+      "std": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "ci95": 0.0,
+      "ci95_low": 0.0,
+      "ci95_high": 0.0,
+      "ci_method": "student_t"
+    },
+    "sensitive_mean_wait_proxy_defended": {
+      "mean": 0.0,
+      "std": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "ci95": 0.0,
+      "ci95_low": 0.0,
+      "ci95_high": 0.0,
+      "ci_method": "student_t"
+    },
+    "backend_choice_accuracy": {
+      "mean": 0.5717,
+      "std": 0.033,
+      "min": 0.5045,
+      "max": 0.6295,
+      "ci95": 0.0182,
+      "ci95_low": 0.5536,
+      "ci95_high": 0.5899,
+      "ci_method": "student_t"
+    },
+    "backend_choice_leakage_advantage": {
+      "mean": 0.0717,
+      "std": 0.033,
+      "min": 0.0045,
+      "max": 0.1295,
+      "ci95": 0.0182,
+      "ci95_low": 0.0536,
+      "ci95_high": 0.0899,
+      "ci_method": "student_t"
+    }
+  },
+  "evaluation_protocol": {
+    "split_mode": "leave_one_seed_out",
+    "observation_space": "O_sb",
+    "backend_encoding": "onehot",
+    "ci_method": "student_t"
+  }
+}

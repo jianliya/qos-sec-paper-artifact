@@ -1,0 +1,30 @@
+{
+  "reporting_precision": 4,
+  "json_checks": [
+    {"name": "RQ1 Class A mean wait", "file": "results/timing_oext/wait_only_loso/summary_multiseed.json", "path": ["metrics", "classA_mean_wait", "mean"], "expected": 0.4671},
+    {"name": "RQ1 Class B mean wait", "file": "results/timing_oext/wait_only_loso/summary_multiseed.json", "path": ["metrics", "classB_mean_wait", "mean"], "expected": 0.5153},
+    {"name": "RQ1 wait-only accuracy", "file": "results/timing_oext/wait_only_loso/summary_multiseed.json", "path": ["metrics", "accuracy", "mean"], "expected": 0.6010},
+    {"name": "RQ1 wait-only signed advantage", "file": "results/timing_oext/wait_only_loso/summary_multiseed.json", "path": ["metrics", "leakage_advantage", "mean"], "expected": 0.1010},
+    {"name": "RQ1 wait-plus-status accuracy", "file": "results/timing_oext/wait_status_loso/summary_multiseed.json", "path": ["metrics", "accuracy", "mean"], "expected": 0.6010},
+    {"name": "RQ1 wait-plus-backend accuracy", "file": "results/timing_oext/wait_backend_loso/summary_multiseed.json", "path": ["metrics", "accuracy", "mean"], "expected": 0.5822},
+    {"name": "RQ1 wait-plus-backend signed advantage", "file": "results/timing_oext/wait_backend_loso/summary_multiseed.json", "path": ["metrics", "leakage_advantage", "mean"], "expected": 0.0822},
+    {"name": "RQ1 shaped accuracy", "file": "results/timing_oext/wait_only_loso/summary_multiseed.json", "path": ["metrics", "defended_accuracy", "mean"], "expected": 0.5018},
+    {"name": "RQ2 raw O_sb accuracy", "file": "results/timing/summary_multiseed_loso.json", "path": ["metrics", "accuracy", "mean"], "expected": 0.6206},
+    {"name": "RQ2 raw O_sb separability", "file": "results/timing/summary_multiseed_loso.json", "path": ["metrics", "leakage_advantage", "mean"], "expected": 0.1206},
+    {"name": "RQ2 restricted O_sb accuracy", "file": "results/timing/summary_multiseed_loso.json", "path": ["metrics", "defended_accuracy", "mean"], "expected": 0.5018},
+    {"name": "RQ2 monotone padding advantage", "file": "results/timing_oext/release_tradeoff/summary_tradeoff.json", "path": ["summaries", "monotone_padding", "metrics", "leakage_advantage", "mean"], "expected": 0.0324},
+    {"name": "RQ2 monotone padding added delay", "file": "results/timing_oext/release_tradeoff/summary_tradeoff.json", "path": ["summaries", "monotone_padding", "metrics", "mean_extra_wait", "mean"], "expected": 0.1845},
+    {"name": "RQ2 delayed release advantage", "file": "results/timing_oext/release_tradeoff/summary_tradeoff.json", "path": ["summaries", "delayed_release", "metrics", "leakage_advantage", "mean"], "expected": 0.0418},
+    {"name": "RQ2 delayed release added delay", "file": "results/timing_oext/release_tradeoff/summary_tradeoff.json", "path": ["summaries", "delayed_release", "metrics", "mean_extra_wait", "mean"], "expected": 0.1307},
+    {"name": "RQ2 classical queue paired delta", "file": "results/ablations/timing_paired_contrast.json", "path": ["contrasts", "main_vs_classical_queue", "metrics", "delta_leakage_advantage", "mean"], "expected": 0.1003},
+    {"name": "RQ2 classical queue positive ratio", "file": "results/ablations/timing_paired_contrast.json", "path": ["contrasts", "main_vs_classical_queue", "positive_delta_ratio"], "expected": 0.9375},
+    {"name": "RQ4 raw mean accuracy", "file": "results/hardware/timing_hardware_summary_ibm_kingston_6runs_2026-07-01_144002.json", "path": ["aggregate", "raw", "mean_threshold_accuracy"], "expected": 0.5312},
+    {"name": "RQ4 grouped diagnostic accuracy", "file": "results/hardware/timing_hardware_summary_ibm_kingston_6runs_2026-07-01_144002.json", "path": ["aggregate", "grouped_release", "mean_threshold_accuracy"], "expected": 0.5833}
+  ],
+  "csv_checks": [
+    {"name": "RQ3 compile-visible timing separability", "file": "tables/timing_compile_awareness.csv", "match": {"profile": "compile_visible"}, "column": "leakage_advantage", "expected": 0.1469},
+    {"name": "RQ3 logical-only timing separability", "file": "tables/timing_compile_awareness.csv", "match": {"profile": "logical_only"}, "column": "leakage_advantage", "expected": 0.1898},
+    {"name": "RQ3 high-heterogeneity backend-choice observability", "file": "tables/timing_noise_heterogeneity.csv", "match": {"profile": "high_drift"}, "column": "backend_choice_leakage_advantage", "expected": 0.0961},
+    {"name": "RQ3 high-heterogeneity fidelity shift", "file": "tables/timing_noise_heterogeneity.csv", "match": {"profile": "high_drift"}, "column": "victim_fidelity_proxy_shift", "expected": -0.0072}
+  ]
+}

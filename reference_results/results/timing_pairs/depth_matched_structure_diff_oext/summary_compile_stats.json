@@ -1,0 +1,1991 @@
+{
+  "scenario": "timing",
+  "per_seed": [
+    {
+      "seed": 42,
+      "classA": {
+        "num_jobs": 16,
+        "logical_qubits": {
+          "mean": 8.3125,
+          "std": 0.6818,
+          "min": 7.0,
+          "max": 9.0
+        },
+        "logical_depth": {
+          "mean": 131.9375,
+          "std": 4.3513,
+          "min": 125.0,
+          "max": 138.0
+        },
+        "compiled_depth": {
+          "mean": 10.0,
+          "std": 0.0,
+          "min": 10.0,
+          "max": 10.0
+        },
+        "cx_count": {
+          "mean": 3.5,
+          "std": 0.0,
+          "min": 3.5,
+          "max": 3.5
+        },
+        "cx_density": {
+          "mean": 0.35,
+          "std": 0.0,
+          "min": 0.35,
+          "max": 0.35
+        },
+        "swap_count": {
+          "mean": 0.5,
+          "std": 0.0,
+          "min": 0.5,
+          "max": 0.5
+        },
+        "layout_span": {
+          "mean": 5.5,
+          "std": 0.0,
+          "min": 5.5,
+          "max": 5.5
+        },
+        "expected_fidelity": {
+          "mean": 0.8929,
+          "std": 0.0,
+          "min": 0.8929,
+          "max": 0.8929
+        },
+        "compile_cost": {
+          "mean": 0.237,
+          "std": 0.0,
+          "min": 0.237,
+          "max": 0.237
+        }
+      },
+      "classB": {
+        "num_jobs": 16,
+        "logical_qubits": {
+          "mean": 8.125,
+          "std": 0.5995,
+          "min": 7.0,
+          "max": 9.0
+        },
+        "logical_depth": {
+          "mean": 129.625,
+          "std": 4.3283,
+          "min": 122.0,
+          "max": 136.0
+        },
+        "compiled_depth": {
+          "mean": 19.5,
+          "std": 0.0,
+          "min": 19.5,
+          "max": 19.5
+        },
+        "cx_count": {
+          "mean": 14.5,
+          "std": 0.0,
+          "min": 14.5,
+          "max": 14.5
+        },
+        "cx_density": {
+          "mean": 0.7436,
+          "std": 0.0,
+          "min": 0.7436,
+          "max": 0.7436
+        },
+        "swap_count": {
+          "mean": 1.5,
+          "std": 0.0,
+          "min": 1.5,
+          "max": 1.5
+        },
+        "layout_span": {
+          "mean": 7.0,
+          "std": 0.0,
+          "min": 7.0,
+          "max": 7.0
+        },
+        "expected_fidelity": {
+          "mean": 0.8054,
+          "std": 0.0,
+          "min": 0.8054,
+          "max": 0.8054
+        },
+        "compile_cost": {
+          "mean": 0.4643,
+          "std": 0.0,
+          "min": 0.4643,
+          "max": 0.4643
+        }
+      }
+    },
+    {
+      "seed": 43,
+      "classA": {
+        "num_jobs": 16,
+        "logical_qubits": {
+          "mean": 7.75,
+          "std": 0.75,
+          "min": 7.0,
+          "max": 9.0
+        },
+        "logical_depth": {
+          "mean": 128.875,
+          "std": 4.4843,
+          "min": 122.0,
+          "max": 136.0
+        },
+        "compiled_depth": {
+          "mean": 10.0,
+          "std": 0.0,
+          "min": 10.0,
+          "max": 10.0
+        },
+        "cx_count": {
+          "mean": 3.5,
+          "std": 0.0,
+          "min": 3.5,
+          "max": 3.5
+        },
+        "cx_density": {
+          "mean": 0.35,
+          "std": 0.0,
+          "min": 0.35,
+          "max": 0.35
+        },
+        "swap_count": {
+          "mean": 0.5,
+          "std": 0.0,
+          "min": 0.5,
+          "max": 0.5
+        },
+        "layout_span": {
+          "mean": 5.5,
+          "std": 0.0,
+          "min": 5.5,
+          "max": 5.5
+        },
+        "expected_fidelity": {
+          "mean": 0.9003,
+          "std": 0.0,
+          "min": 0.9003,
+          "max": 0.9003
+        },
+        "compile_cost": {
+          "mean": 0.237,
+          "std": 0.0,
+          "min": 0.237,
+          "max": 0.237
+        }
+      },
+      "classB": {
+        "num_jobs": 20,
+        "logical_qubits": {
+          "mean": 8.15,
+          "std": 0.7921,
+          "min": 7.0,
+          "max": 9.0
+        },
+        "logical_depth": {
+          "mean": 130.55,
+          "std": 4.2482,
+          "min": 122.0,
+          "max": 137.0
+        },
+        "compiled_depth": {
+          "mean": 21.0,
+          "std": 2.5981,
+          "min": 19.5,
+          "max": 25.5
+        },
+        "cx_count": {
+          "mean": 16.125,
+          "std": 2.8146,
+          "min": 14.5,
+          "max": 21.0
+        },
+        "cx_density": {
+          "mean": 0.7636,
+          "std": 0.0346,
+          "min": 0.7436,
+          "max": 0.8235
+        },
+        "swap_count": {
+          "mean": 2.0,
+          "std": 0.866,
+          "min": 1.5,
+          "max": 3.5
+        },
+        "layout_span": {
+          "mean": 7.0,
+          "std": 0.0,
+          "min": 7.0,
+          "max": 7.0
+        },
+        "expected_fidelity": {
+          "mean": 0.791,
+          "std": 0.0206,
+          "min": 0.7791,
+          "max": 0.8266
+        },
+        "compile_cost": {
+          "mean": 0.5124,
+          "std": 0.0835,
+          "min": 0.4643,
+          "max": 0.657
+        }
+      }
+    },
+    {
+      "seed": 44,
+      "classA": {
+        "num_jobs": 18,
+        "logical_qubits": {
+          "mean": 7.7222,
+          "std": 0.8032,
+          "min": 7.0,
+          "max": 9.0
+        },
+        "logical_depth": {
+          "mean": 128.2778,
+          "std": 5.7523,
+          "min": 122.0,
+          "max": 138.0
+        },
+        "compiled_depth": {
+          "mean": 10.0,
+          "std": 0.0,
+          "min": 10.0,
+          "max": 10.0
+        },
+        "cx_count": {
+          "mean": 3.5,
+          "std": 0.0,
+          "min": 3.5,
+          "max": 3.5
+        },
+        "cx_density": {
+          "mean": 0.35,
+          "std": 0.0,
+          "min": 0.35,
+          "max": 0.35
+        },
+        "swap_count": {
+          "mean": 0.5,
+          "std": 0.0,
+          "min": 0.5,
+          "max": 0.5
+        },
+        "layout_span": {
+          "mean": 5.5,
+          "std": 0.0,
+          "min": 5.5,
+          "max": 5.5
+        },
+        "expected_fidelity": {
+          "mean": 0.8866,
+          "std": 0.0,
+          "min": 0.8866,
+          "max": 0.8866
+        },
+        "compile_cost": {
+          "mean": 0.237,
+          "std": 0.0,
+          "min": 0.237,
+          "max": 0.237
+        }
+      },
+      "classB": {
+        "num_jobs": 20,
+        "logical_qubits": {
+          "mean": 7.95,
+          "std": 0.8047,
+          "min": 7.0,
+          "max": 9.0
+        },
+        "logical_depth": {
+          "mean": 129.7,
+          "std": 4.36,
+          "min": 122.0,
+          "max": 137.0
+        },
+        "compiled_depth": {
+          "mean": 19.5,
+          "std": 0.0,
+          "min": 19.5,
+          "max": 19.5
+        },
+        "cx_count": {
+          "mean": 14.5,
+          "std": 0.0,
+          "min": 14.5,
+          "max": 14.5
+        },
+        "cx_density": {
+          "mean": 0.7436,
+          "std": 0.0,
+          "min": 0.7436,
+          "max": 0.7436
+        },
+        "swap_count": {
+          "mean": 1.5,
+          "std": 0.0,
+          "min": 1.5,
+          "max": 1.5
+        },
+        "layout_span": {
+          "mean": 7.0,
+          "std": 0.0,
+          "min": 7.0,
+          "max": 7.0
+        },
+        "expected_fidelity": {
+          "mean": 0.8122,
+          "std": 0.0,
+          "min": 0.8122,
+          "max": 0.8122
+        },
+        "compile_cost": {
+          "mean": 0.4643,
+          "std": 0.0,
+          "min": 0.4643,
+          "max": 0.4643
+        }
+      }
+    },
+    {
+      "seed": 45,
+      "classA": {
+        "num_jobs": 18,
+        "logical_qubits": {
+          "mean": 7.6111,
+          "std": 0.7556,
+          "min": 7.0,
+          "max": 9.0
+        },
+        "logical_depth": {
+          "mean": 129.2222,
+          "std": 4.8368,
+          "min": 122.0,
+          "max": 138.0
+        },
+        "compiled_depth": {
+          "mean": 10.0,
+          "std": 0.0,
+          "min": 10.0,
+          "max": 10.0
+        },
+        "cx_count": {
+          "mean": 3.5,
+          "std": 0.0,
+          "min": 3.5,
+          "max": 3.5
+        },
+        "cx_density": {
+          "mean": 0.35,
+          "std": 0.0,
+          "min": 0.35,
+          "max": 0.35
+        },
+        "swap_count": {
+          "mean": 0.5,
+          "std": 0.0,
+          "min": 0.5,
+          "max": 0.5
+        },
+        "layout_span": {
+          "mean": 5.5,
+          "std": 0.0,
+          "min": 5.5,
+          "max": 5.5
+        },
+        "expected_fidelity": {
+          "mean": 0.9065,
+          "std": 0.0,
+          "min": 0.9065,
+          "max": 0.9065
+        },
+        "compile_cost": {
+          "mean": 0.237,
+          "std": 0.0,
+          "min": 0.237,
+          "max": 0.237
+        }
+      },
+      "classB": {
+        "num_jobs": 18,
+        "logical_qubits": {
+          "mean": 8.1111,
+          "std": 0.8749,
+          "min": 7.0,
+          "max": 9.0
+        },
+        "logical_depth": {
+          "mean": 131.5556,
+          "std": 5.1771,
+          "min": 122.0,
+          "max": 138.0
+        },
+        "compiled_depth": {
+          "mean": 19.5,
+          "std": 0.0,
+          "min": 19.5,
+          "max": 19.5
+        },
+        "cx_count": {
+          "mean": 14.5,
+          "std": 0.0,
+          "min": 14.5,
+          "max": 14.5
+        },
+        "cx_density": {
+          "mean": 0.7436,
+          "std": 0.0,
+          "min": 0.7436,
+          "max": 0.7436
+        },
+        "swap_count": {
+          "mean": 1.5,
+          "std": 0.0,
+          "min": 1.5,
+          "max": 1.5
+        },
+        "layout_span": {
+          "mean": 7.0,
+          "std": 0.0,
+          "min": 7.0,
+          "max": 7.0
+        },
+        "expected_fidelity": {
+          "mean": 0.7868,
+          "std": 0.0,
+          "min": 0.7868,
+          "max": 0.7868
+        },
+        "compile_cost": {
+          "mean": 0.4643,
+          "std": 0.0,
+          "min": 0.4643,
+          "max": 0.4643
+        }
+      }
+    },
+    {
+      "seed": 46,
+      "classA": {
+        "num_jobs": 16,
+        "logical_qubits": {
+          "mean": 8.0,
+          "std": 0.866,
+          "min": 7.0,
+          "max": 9.0
+        },
+        "logical_depth": {
+          "mean": 130.75,
+          "std": 4.6165,
+          "min": 122.0,
+          "max": 137.0
+        },
+        "compiled_depth": {
+          "mean": 10.0,
+          "std": 0.0,
+          "min": 10.0,
+          "max": 10.0
+        },
+        "cx_count": {
+          "mean": 3.5,
+          "std": 0.0,
+          "min": 3.5,
+          "max": 3.5
+        },
+        "cx_density": {
+          "mean": 0.35,
+          "std": 0.0,
+          "min": 0.35,
+          "max": 0.35
+        },
+        "swap_count": {
+          "mean": 0.5,
+          "std": 0.0,
+          "min": 0.5,
+          "max": 0.5
+        },
+        "layout_span": {
+          "mean": 5.5,
+          "std": 0.0,
+          "min": 5.5,
+          "max": 5.5
+        },
+        "expected_fidelity": {
+          "mean": 0.9124,
+          "std": 0.0,
+          "min": 0.9124,
+          "max": 0.9124
+        },
+        "compile_cost": {
+          "mean": 0.237,
+          "std": 0.0,
+          "min": 0.237,
+          "max": 0.237
+        }
+      },
+      "classB": {
+        "num_jobs": 18,
+        "logical_qubits": {
+          "mean": 8.2222,
+          "std": 0.8535,
+          "min": 7.0,
+          "max": 9.0
+        },
+        "logical_depth": {
+          "mean": 129.7778,
+          "std": 4.276,
+          "min": 123.0,
+          "max": 136.0
+        },
+        "compiled_depth": {
+          "mean": 21.1667,
+          "std": 2.6874,
+          "min": 19.5,
+          "max": 25.5
+        },
+        "cx_count": {
+          "mean": 16.3056,
+          "std": 2.9114,
+          "min": 14.5,
+          "max": 21.0
+        },
+        "cx_density": {
+          "mean": 0.7658,
+          "std": 0.0358,
+          "min": 0.7436,
+          "max": 0.8235
+        },
+        "swap_count": {
+          "mean": 2.0556,
+          "std": 0.8958,
+          "min": 1.5,
+          "max": 3.5
+        },
+        "layout_span": {
+          "mean": 7.0,
+          "std": 0.0,
+          "min": 7.0,
+          "max": 7.0
+        },
+        "expected_fidelity": {
+          "mean": 0.823,
+          "std": 0.0149,
+          "min": 0.8137,
+          "max": 0.8471
+        },
+        "compile_cost": {
+          "mean": 0.5178,
+          "std": 0.0863,
+          "min": 0.4643,
+          "max": 0.657
+        }
+      }
+    },
+    {
+      "seed": 47,
+      "classA": {
+        "num_jobs": 17,
+        "logical_qubits": {
+          "mean": 8.1176,
+          "std": 0.8319,
+          "min": 7.0,
+          "max": 9.0
+        },
+        "logical_depth": {
+          "mean": 129.2353,
+          "std": 4.7345,
+          "min": 122.0,
+          "max": 137.0
+        },
+        "compiled_depth": {
+          "mean": 10.0,
+          "std": 0.0,
+          "min": 10.0,
+          "max": 10.0
+        },
+        "cx_count": {
+          "mean": 3.5,
+          "std": 0.0,
+          "min": 3.5,
+          "max": 3.5
+        },
+        "cx_density": {
+          "mean": 0.35,
+          "std": 0.0,
+          "min": 0.35,
+          "max": 0.35
+        },
+        "swap_count": {
+          "mean": 0.5,
+          "std": 0.0,
+          "min": 0.5,
+          "max": 0.5
+        },
+        "layout_span": {
+          "mean": 5.5,
+          "std": 0.0,
+          "min": 5.5,
+          "max": 5.5
+        },
+        "expected_fidelity": {
+          "mean": 0.8717,
+          "std": 0.0,
+          "min": 0.8717,
+          "max": 0.8717
+        },
+        "compile_cost": {
+          "mean": 0.237,
+          "std": 0.0,
+          "min": 0.237,
+          "max": 0.237
+        }
+      },
+      "classB": {
+        "num_jobs": 17,
+        "logical_qubits": {
+          "mean": 7.8824,
+          "std": 0.8319,
+          "min": 7.0,
+          "max": 9.0
+        },
+        "logical_depth": {
+          "mean": 132.4706,
+          "std": 5.1119,
+          "min": 123.0,
+          "max": 138.0
+        },
+        "compiled_depth": {
+          "mean": 19.5,
+          "std": 0.0,
+          "min": 19.5,
+          "max": 19.5
+        },
+        "cx_count": {
+          "mean": 14.5,
+          "std": 0.0,
+          "min": 14.5,
+          "max": 14.5
+        },
+        "cx_density": {
+          "mean": 0.7436,
+          "std": 0.0,
+          "min": 0.7436,
+          "max": 0.7436
+        },
+        "swap_count": {
+          "mean": 1.5,
+          "std": 0.0,
+          "min": 1.5,
+          "max": 1.5
+        },
+        "layout_span": {
+          "mean": 7.0,
+          "std": 0.0,
+          "min": 7.0,
+          "max": 7.0
+        },
+        "expected_fidelity": {
+          "mean": 0.7984,
+          "std": 0.0,
+          "min": 0.7984,
+          "max": 0.7984
+        },
+        "compile_cost": {
+          "mean": 0.4643,
+          "std": 0.0,
+          "min": 0.4643,
+          "max": 0.4643
+        }
+      }
+    },
+    {
+      "seed": 48,
+      "classA": {
+        "num_jobs": 18,
+        "logical_qubits": {
+          "mean": 7.9444,
+          "std": 0.7798,
+          "min": 7.0,
+          "max": 9.0
+        },
+        "logical_depth": {
+          "mean": 129.9444,
+          "std": 4.6604,
+          "min": 124.0,
+          "max": 138.0
+        },
+        "compiled_depth": {
+          "mean": 10.0,
+          "std": 0.0,
+          "min": 10.0,
+          "max": 10.0
+        },
+        "cx_count": {
+          "mean": 3.5,
+          "std": 0.0,
+          "min": 3.5,
+          "max": 3.5
+        },
+        "cx_density": {
+          "mean": 0.35,
+          "std": 0.0,
+          "min": 0.35,
+          "max": 0.35
+        },
+        "swap_count": {
+          "mean": 0.5,
+          "std": 0.0,
+          "min": 0.5,
+          "max": 0.5
+        },
+        "layout_span": {
+          "mean": 5.5,
+          "std": 0.0,
+          "min": 5.5,
+          "max": 5.5
+        },
+        "expected_fidelity": {
+          "mean": 0.8869,
+          "std": 0.0,
+          "min": 0.8869,
+          "max": 0.8869
+        },
+        "compile_cost": {
+          "mean": 0.237,
+          "std": 0.0,
+          "min": 0.237,
+          "max": 0.237
+        }
+      },
+      "classB": {
+        "num_jobs": 16,
+        "logical_qubits": {
+          "mean": 7.6875,
+          "std": 0.583,
+          "min": 7.0,
+          "max": 9.0
+        },
+        "logical_depth": {
+          "mean": 129.25,
+          "std": 4.657,
+          "min": 122.0,
+          "max": 136.0
+        },
+        "compiled_depth": {
+          "mean": 19.5,
+          "std": 0.0,
+          "min": 19.5,
+          "max": 19.5
+        },
+        "cx_count": {
+          "mean": 14.5,
+          "std": 0.0,
+          "min": 14.5,
+          "max": 14.5
+        },
+        "cx_density": {
+          "mean": 0.7436,
+          "std": 0.0,
+          "min": 0.7436,
+          "max": 0.7436
+        },
+        "swap_count": {
+          "mean": 1.5,
+          "std": 0.0,
+          "min": 1.5,
+          "max": 1.5
+        },
+        "layout_span": {
+          "mean": 7.0,
+          "std": 0.0,
+          "min": 7.0,
+          "max": 7.0
+        },
+        "expected_fidelity": {
+          "mean": 0.8064,
+          "std": 0.0,
+          "min": 0.8064,
+          "max": 0.8064
+        },
+        "compile_cost": {
+          "mean": 0.4643,
+          "std": 0.0,
+          "min": 0.4643,
+          "max": 0.4643
+        }
+      }
+    },
+    {
+      "seed": 49,
+      "classA": {
+        "num_jobs": 17,
+        "logical_qubits": {
+          "mean": 7.7647,
+          "std": 0.8065,
+          "min": 7.0,
+          "max": 9.0
+        },
+        "logical_depth": {
+          "mean": 131.0588,
+          "std": 4.6586,
+          "min": 123.0,
+          "max": 138.0
+        },
+        "compiled_depth": {
+          "mean": 10.0,
+          "std": 0.0,
+          "min": 10.0,
+          "max": 10.0
+        },
+        "cx_count": {
+          "mean": 3.5,
+          "std": 0.0,
+          "min": 3.5,
+          "max": 3.5
+        },
+        "cx_density": {
+          "mean": 0.35,
+          "std": 0.0,
+          "min": 0.35,
+          "max": 0.35
+        },
+        "swap_count": {
+          "mean": 0.5,
+          "std": 0.0,
+          "min": 0.5,
+          "max": 0.5
+        },
+        "layout_span": {
+          "mean": 5.5,
+          "std": 0.0,
+          "min": 5.5,
+          "max": 5.5
+        },
+        "expected_fidelity": {
+          "mean": 0.9208,
+          "std": 0.0,
+          "min": 0.9208,
+          "max": 0.9208
+        },
+        "compile_cost": {
+          "mean": 0.237,
+          "std": 0.0,
+          "min": 0.237,
+          "max": 0.237
+        }
+      },
+      "classB": {
+        "num_jobs": 20,
+        "logical_qubits": {
+          "mean": 8.1,
+          "std": 0.8888,
+          "min": 7.0,
+          "max": 9.0
+        },
+        "logical_depth": {
+          "mean": 129.2,
+          "std": 4.5122,
+          "min": 123.0,
+          "max": 138.0
+        },
+        "compiled_depth": {
+          "mean": 25.5,
+          "std": 0.0,
+          "min": 25.5,
+          "max": 25.5
+        },
+        "cx_count": {
+          "mean": 21.0,
+          "std": 0.0,
+          "min": 21.0,
+          "max": 21.0
+        },
+        "cx_density": {
+          "mean": 0.8235,
+          "std": 0.0,
+          "min": 0.8235,
+          "max": 0.8235
+        },
+        "swap_count": {
+          "mean": 3.5,
+          "std": 0.0,
+          "min": 3.5,
+          "max": 3.5
+        },
+        "layout_span": {
+          "mean": 7.0,
+          "std": 0.0,
+          "min": 7.0,
+          "max": 7.0
+        },
+        "expected_fidelity": {
+          "mean": 0.8337,
+          "std": 0.0,
+          "min": 0.8337,
+          "max": 0.8337
+        },
+        "compile_cost": {
+          "mean": 0.657,
+          "std": 0.0,
+          "min": 0.657,
+          "max": 0.657
+        }
+      }
+    },
+    {
+      "seed": 50,
+      "classA": {
+        "num_jobs": 20,
+        "logical_qubits": {
+          "mean": 7.8,
+          "std": 0.8718,
+          "min": 7.0,
+          "max": 9.0
+        },
+        "logical_depth": {
+          "mean": 128.55,
+          "std": 5.7487,
+          "min": 122.0,
+          "max": 138.0
+        },
+        "compiled_depth": {
+          "mean": 10.0,
+          "std": 0.0,
+          "min": 10.0,
+          "max": 10.0
+        },
+        "cx_count": {
+          "mean": 3.5,
+          "std": 0.0,
+          "min": 3.5,
+          "max": 3.5
+        },
+        "cx_density": {
+          "mean": 0.35,
+          "std": 0.0,
+          "min": 0.35,
+          "max": 0.35
+        },
+        "swap_count": {
+          "mean": 0.5,
+          "std": 0.0,
+          "min": 0.5,
+          "max": 0.5
+        },
+        "layout_span": {
+          "mean": 5.5,
+          "std": 0.0,
+          "min": 5.5,
+          "max": 5.5
+        },
+        "expected_fidelity": {
+          "mean": 0.919,
+          "std": 0.0,
+          "min": 0.919,
+          "max": 0.919
+        },
+        "compile_cost": {
+          "mean": 0.237,
+          "std": 0.0,
+          "min": 0.237,
+          "max": 0.237
+        }
+      },
+      "classB": {
+        "num_jobs": 20,
+        "logical_qubits": {
+          "mean": 8.25,
+          "std": 0.8292,
+          "min": 7.0,
+          "max": 9.0
+        },
+        "logical_depth": {
+          "mean": 130.4,
+          "std": 4.6195,
+          "min": 123.0,
+          "max": 137.0
+        },
+        "compiled_depth": {
+          "mean": 19.5,
+          "std": 0.0,
+          "min": 19.5,
+          "max": 19.5
+        },
+        "cx_count": {
+          "mean": 14.5,
+          "std": 0.0,
+          "min": 14.5,
+          "max": 14.5
+        },
+        "cx_density": {
+          "mean": 0.7436,
+          "std": 0.0,
+          "min": 0.7436,
+          "max": 0.7436
+        },
+        "swap_count": {
+          "mean": 1.5,
+          "std": 0.0,
+          "min": 1.5,
+          "max": 1.5
+        },
+        "layout_span": {
+          "mean": 7.0,
+          "std": 0.0,
+          "min": 7.0,
+          "max": 7.0
+        },
+        "expected_fidelity": {
+          "mean": 0.8133,
+          "std": 0.0,
+          "min": 0.8133,
+          "max": 0.8133
+        },
+        "compile_cost": {
+          "mean": 0.4643,
+          "std": 0.0,
+          "min": 0.4643,
+          "max": 0.4643
+        }
+      }
+    },
+    {
+      "seed": 51,
+      "classA": {
+        "num_jobs": 20,
+        "logical_qubits": {
+          "mean": 8.0,
+          "std": 0.7071,
+          "min": 7.0,
+          "max": 9.0
+        },
+        "logical_depth": {
+          "mean": 129.95,
+          "std": 4.0432,
+          "min": 123.0,
+          "max": 137.0
+        },
+        "compiled_depth": {
+          "mean": 10.0,
+          "std": 0.0,
+          "min": 10.0,
+          "max": 10.0
+        },
+        "cx_count": {
+          "mean": 3.5,
+          "std": 0.0,
+          "min": 3.5,
+          "max": 3.5
+        },
+        "cx_density": {
+          "mean": 0.35,
+          "std": 0.0,
+          "min": 0.35,
+          "max": 0.35
+        },
+        "swap_count": {
+          "mean": 0.5,
+          "std": 0.0,
+          "min": 0.5,
+          "max": 0.5
+        },
+        "layout_span": {
+          "mean": 5.5,
+          "std": 0.0,
+          "min": 5.5,
+          "max": 5.5
+        },
+        "expected_fidelity": {
+          "mean": 0.8897,
+          "std": 0.0,
+          "min": 0.8897,
+          "max": 0.8897
+        },
+        "compile_cost": {
+          "mean": 0.237,
+          "std": 0.0,
+          "min": 0.237,
+          "max": 0.237
+        }
+      },
+      "classB": {
+        "num_jobs": 20,
+        "logical_qubits": {
+          "mean": 8.15,
+          "std": 0.7263,
+          "min": 7.0,
+          "max": 9.0
+        },
+        "logical_depth": {
+          "mean": 129.4,
+          "std": 5.3889,
+          "min": 122.0,
+          "max": 137.0
+        },
+        "compiled_depth": {
+          "mean": 19.5,
+          "std": 0.0,
+          "min": 19.5,
+          "max": 19.5
+        },
+        "cx_count": {
+          "mean": 14.5,
+          "std": 0.0,
+          "min": 14.5,
+          "max": 14.5
+        },
+        "cx_density": {
+          "mean": 0.7436,
+          "std": 0.0,
+          "min": 0.7436,
+          "max": 0.7436
+        },
+        "swap_count": {
+          "mean": 1.5,
+          "std": 0.0,
+          "min": 1.5,
+          "max": 1.5
+        },
+        "layout_span": {
+          "mean": 7.0,
+          "std": 0.0,
+          "min": 7.0,
+          "max": 7.0
+        },
+        "expected_fidelity": {
+          "mean": 0.7653,
+          "std": 0.0,
+          "min": 0.7653,
+          "max": 0.7653
+        },
+        "compile_cost": {
+          "mean": 0.4643,
+          "std": 0.0,
+          "min": 0.4643,
+          "max": 0.4643
+        }
+      }
+    },
+    {
+      "seed": 52,
+      "classA": {
+        "num_jobs": 16,
+        "logical_qubits": {
+          "mean": 7.8125,
+          "std": 0.8817,
+          "min": 7.0,
+          "max": 9.0
+        },
+        "logical_depth": {
+          "mean": 131.8125,
+          "std": 4.8505,
+          "min": 124.0,
+          "max": 138.0
+        },
+        "compiled_depth": {
+          "mean": 10.0,
+          "std": 0.0,
+          "min": 10.0,
+          "max": 10.0
+        },
+        "cx_count": {
+          "mean": 3.5,
+          "std": 0.0,
+          "min": 3.5,
+          "max": 3.5
+        },
+        "cx_density": {
+          "mean": 0.35,
+          "std": 0.0,
+          "min": 0.35,
+          "max": 0.35
+        },
+        "swap_count": {
+          "mean": 0.5,
+          "std": 0.0,
+          "min": 0.5,
+          "max": 0.5
+        },
+        "layout_span": {
+          "mean": 5.5,
+          "std": 0.0,
+          "min": 5.5,
+          "max": 5.5
+        },
+        "expected_fidelity": {
+          "mean": 0.8946,
+          "std": 0.0,
+          "min": 0.8946,
+          "max": 0.8946
+        },
+        "compile_cost": {
+          "mean": 0.237,
+          "std": 0.0,
+          "min": 0.237,
+          "max": 0.237
+        }
+      },
+      "classB": {
+        "num_jobs": 18,
+        "logical_qubits": {
+          "mean": 8.3333,
+          "std": 0.6667,
+          "min": 7.0,
+          "max": 9.0
+        },
+        "logical_depth": {
+          "mean": 128.7778,
+          "std": 4.3532,
+          "min": 122.0,
+          "max": 137.0
+        },
+        "compiled_depth": {
+          "mean": 19.5,
+          "std": 0.0,
+          "min": 19.5,
+          "max": 19.5
+        },
+        "cx_count": {
+          "mean": 14.5,
+          "std": 0.0,
+          "min": 14.5,
+          "max": 14.5
+        },
+        "cx_density": {
+          "mean": 0.7436,
+          "std": 0.0,
+          "min": 0.7436,
+          "max": 0.7436
+        },
+        "swap_count": {
+          "mean": 1.5,
+          "std": 0.0,
+          "min": 1.5,
+          "max": 1.5
+        },
+        "layout_span": {
+          "mean": 7.0,
+          "std": 0.0,
+          "min": 7.0,
+          "max": 7.0
+        },
+        "expected_fidelity": {
+          "mean": 0.8116,
+          "std": 0.0,
+          "min": 0.8116,
+          "max": 0.8116
+        },
+        "compile_cost": {
+          "mean": 0.4643,
+          "std": 0.0,
+          "min": 0.4643,
+          "max": 0.4643
+        }
+      }
+    },
+    {
+      "seed": 53,
+      "classA": {
+        "num_jobs": 19,
+        "logical_qubits": {
+          "mean": 8.0526,
+          "std": 0.8255,
+          "min": 7.0,
+          "max": 9.0
+        },
+        "logical_depth": {
+          "mean": 132.4211,
+          "std": 4.4404,
+          "min": 124.0,
+          "max": 138.0
+        },
+        "compiled_depth": {
+          "mean": 10.0,
+          "std": 0.0,
+          "min": 10.0,
+          "max": 10.0
+        },
+        "cx_count": {
+          "mean": 3.5,
+          "std": 0.0,
+          "min": 3.5,
+          "max": 3.5
+        },
+        "cx_density": {
+          "mean": 0.35,
+          "std": 0.0,
+          "min": 0.35,
+          "max": 0.35
+        },
+        "swap_count": {
+          "mean": 0.5,
+          "std": 0.0,
+          "min": 0.5,
+          "max": 0.5
+        },
+        "layout_span": {
+          "mean": 5.5,
+          "std": 0.0,
+          "min": 5.5,
+          "max": 5.5
+        },
+        "expected_fidelity": {
+          "mean": 0.8981,
+          "std": 0.0,
+          "min": 0.8981,
+          "max": 0.8981
+        },
+        "compile_cost": {
+          "mean": 0.237,
+          "std": 0.0,
+          "min": 0.237,
+          "max": 0.237
+        }
+      },
+      "classB": {
+        "num_jobs": 17,
+        "logical_qubits": {
+          "mean": 7.6471,
+          "std": 0.836,
+          "min": 7.0,
+          "max": 9.0
+        },
+        "logical_depth": {
+          "mean": 128.3529,
+          "std": 5.2462,
+          "min": 122.0,
+          "max": 138.0
+        },
+        "compiled_depth": {
+          "mean": 19.5,
+          "std": 0.0,
+          "min": 19.5,
+          "max": 19.5
+        },
+        "cx_count": {
+          "mean": 14.5,
+          "std": 0.0,
+          "min": 14.5,
+          "max": 14.5
+        },
+        "cx_density": {
+          "mean": 0.7436,
+          "std": 0.0,
+          "min": 0.7436,
+          "max": 0.7436
+        },
+        "swap_count": {
+          "mean": 1.5,
+          "std": 0.0,
+          "min": 1.5,
+          "max": 1.5
+        },
+        "layout_span": {
+          "mean": 7.0,
+          "std": 0.0,
+          "min": 7.0,
+          "max": 7.0
+        },
+        "expected_fidelity": {
+          "mean": 0.8012,
+          "std": 0.0,
+          "min": 0.8012,
+          "max": 0.8012
+        },
+        "compile_cost": {
+          "mean": 0.4643,
+          "std": 0.0,
+          "min": 0.4643,
+          "max": 0.4643
+        }
+      }
+    },
+    {
+      "seed": 54,
+      "classA": {
+        "num_jobs": 18,
+        "logical_qubits": {
+          "mean": 8.0,
+          "std": 0.8165,
+          "min": 7.0,
+          "max": 9.0
+        },
+        "logical_depth": {
+          "mean": 132.1111,
+          "std": 5.3426,
+          "min": 122.0,
+          "max": 138.0
+        },
+        "compiled_depth": {
+          "mean": 10.0,
+          "std": 0.0,
+          "min": 10.0,
+          "max": 10.0
+        },
+        "cx_count": {
+          "mean": 3.5,
+          "std": 0.0,
+          "min": 3.5,
+          "max": 3.5
+        },
+        "cx_density": {
+          "mean": 0.35,
+          "std": 0.0,
+          "min": 0.35,
+          "max": 0.35
+        },
+        "swap_count": {
+          "mean": 0.5,
+          "std": 0.0,
+          "min": 0.5,
+          "max": 0.5
+        },
+        "layout_span": {
+          "mean": 5.5,
+          "std": 0.0,
+          "min": 5.5,
+          "max": 5.5
+        },
+        "expected_fidelity": {
+          "mean": 0.9093,
+          "std": 0.0,
+          "min": 0.9093,
+          "max": 0.9093
+        },
+        "compile_cost": {
+          "mean": 0.237,
+          "std": 0.0,
+          "min": 0.237,
+          "max": 0.237
+        }
+      },
+      "classB": {
+        "num_jobs": 20,
+        "logical_qubits": {
+          "mean": 7.85,
+          "std": 0.8529,
+          "min": 7.0,
+          "max": 9.0
+        },
+        "logical_depth": {
+          "mean": 130.45,
+          "std": 4.2951,
+          "min": 122.0,
+          "max": 137.0
+        },
+        "compiled_depth": {
+          "mean": 19.5,
+          "std": 0.0,
+          "min": 19.5,
+          "max": 19.5
+        },
+        "cx_count": {
+          "mean": 14.5,
+          "std": 0.0,
+          "min": 14.5,
+          "max": 14.5
+        },
+        "cx_density": {
+          "mean": 0.7436,
+          "std": 0.0,
+          "min": 0.7436,
+          "max": 0.7436
+        },
+        "swap_count": {
+          "mean": 1.5,
+          "std": 0.0,
+          "min": 1.5,
+          "max": 1.5
+        },
+        "layout_span": {
+          "mean": 7.0,
+          "std": 0.0,
+          "min": 7.0,
+          "max": 7.0
+        },
+        "expected_fidelity": {
+          "mean": 0.8075,
+          "std": 0.0,
+          "min": 0.8075,
+          "max": 0.8075
+        },
+        "compile_cost": {
+          "mean": 0.4643,
+          "std": 0.0,
+          "min": 0.4643,
+          "max": 0.4643
+        }
+      }
+    },
+    {
+      "seed": 55,
+      "classA": {
+        "num_jobs": 19,
+        "logical_qubits": {
+          "mean": 7.7368,
+          "std": 0.7842,
+          "min": 7.0,
+          "max": 9.0
+        },
+        "logical_depth": {
+          "mean": 129.6316,
+          "std": 5.3233,
+          "min": 122.0,
+          "max": 138.0
+        },
+        "compiled_depth": {
+          "mean": 10.0,
+          "std": 0.0,
+          "min": 10.0,
+          "max": 10.0
+        },
+        "cx_count": {
+          "mean": 3.5,
+          "std": 0.0,
+          "min": 3.5,
+          "max": 3.5
+        },
+        "cx_density": {
+          "mean": 0.35,
+          "std": 0.0,
+          "min": 0.35,
+          "max": 0.35
+        },
+        "swap_count": {
+          "mean": 0.5,
+          "std": 0.0,
+          "min": 0.5,
+          "max": 0.5
+        },
+        "layout_span": {
+          "mean": 5.5,
+          "std": 0.0,
+          "min": 5.5,
+          "max": 5.5
+        },
+        "expected_fidelity": {
+          "mean": 0.911,
+          "std": 0.0,
+          "min": 0.911,
+          "max": 0.911
+        },
+        "compile_cost": {
+          "mean": 0.237,
+          "std": 0.0,
+          "min": 0.237,
+          "max": 0.237
+        }
+      },
+      "classB": {
+        "num_jobs": 17,
+        "logical_qubits": {
+          "mean": 7.8824,
+          "std": 0.8998,
+          "min": 7.0,
+          "max": 9.0
+        },
+        "logical_depth": {
+          "mean": 130.0588,
+          "std": 5.8859,
+          "min": 122.0,
+          "max": 138.0
+        },
+        "compiled_depth": {
+          "mean": 19.5,
+          "std": 0.0,
+          "min": 19.5,
+          "max": 19.5
+        },
+        "cx_count": {
+          "mean": 14.5,
+          "std": 0.0,
+          "min": 14.5,
+          "max": 14.5
+        },
+        "cx_density": {
+          "mean": 0.7436,
+          "std": 0.0,
+          "min": 0.7436,
+          "max": 0.7436
+        },
+        "swap_count": {
+          "mean": 1.5,
+          "std": 0.0,
+          "min": 1.5,
+          "max": 1.5
+        },
+        "layout_span": {
+          "mean": 7.0,
+          "std": 0.0,
+          "min": 7.0,
+          "max": 7.0
+        },
+        "expected_fidelity": {
+          "mean": 0.808,
+          "std": 0.0,
+          "min": 0.808,
+          "max": 0.808
+        },
+        "compile_cost": {
+          "mean": 0.4643,
+          "std": 0.0,
+          "min": 0.4643,
+          "max": 0.4643
+        }
+      }
+    },
+    {
+      "seed": 56,
+      "classA": {
+        "num_jobs": 18,
+        "logical_qubits": {
+          "mean": 7.9444,
+          "std": 0.848,
+          "min": 7.0,
+          "max": 9.0
+        },
+        "logical_depth": {
+          "mean": 128.5556,
+          "std": 4.6455,
+          "min": 122.0,
+          "max": 138.0
+        },
+        "compiled_depth": {
+          "mean": 10.0,
+          "std": 0.0,
+          "min": 10.0,
+          "max": 10.0
+        },
+        "cx_count": {
+          "mean": 3.5,
+          "std": 0.0,
+          "min": 3.5,
+          "max": 3.5
+        },
+        "cx_density": {
+          "mean": 0.35,
+          "std": 0.0,
+          "min": 0.35,
+          "max": 0.35
+        },
+        "swap_count": {
+          "mean": 0.5,
+          "std": 0.0,
+          "min": 0.5,
+          "max": 0.5
+        },
+        "layout_span": {
+          "mean": 5.5,
+          "std": 0.0,
+          "min": 5.5,
+          "max": 5.5
+        },
+        "expected_fidelity": {
+          "mean": 0.9088,
+          "std": 0.0,
+          "min": 0.9088,
+          "max": 0.9088
+        },
+        "compile_cost": {
+          "mean": 0.237,
+          "std": 0.0,
+          "min": 0.237,
+          "max": 0.237
+        }
+      },
+      "classB": {
+        "num_jobs": 16,
+        "logical_qubits": {
+          "mean": 8.125,
+          "std": 0.857,
+          "min": 7.0,
+          "max": 9.0
+        },
+        "logical_depth": {
+          "mean": 129.625,
+          "std": 5.1826,
+          "min": 122.0,
+          "max": 137.0
+        },
+        "compiled_depth": {
+          "mean": 19.5,
+          "std": 0.0,
+          "min": 19.5,
+          "max": 19.5
+        },
+        "cx_count": {
+          "mean": 14.5,
+          "std": 0.0,
+          "min": 14.5,
+          "max": 14.5
+        },
+        "cx_density": {
+          "mean": 0.7436,
+          "std": 0.0,
+          "min": 0.7436,
+          "max": 0.7436
+        },
+        "swap_count": {
+          "mean": 1.5,
+          "std": 0.0,
+          "min": 1.5,
+          "max": 1.5
+        },
+        "layout_span": {
+          "mean": 7.0,
+          "std": 0.0,
+          "min": 7.0,
+          "max": 7.0
+        },
+        "expected_fidelity": {
+          "mean": 0.7935,
+          "std": 0.0,
+          "min": 0.7935,
+          "max": 0.7935
+        },
+        "compile_cost": {
+          "mean": 0.4643,
+          "std": 0.0,
+          "min": 0.4643,
+          "max": 0.4643
+        }
+      }
+    },
+    {
+      "seed": 57,
+      "classA": {
+        "num_jobs": 18,
+        "logical_qubits": {
+          "mean": 8.1111,
+          "std": 0.9362,
+          "min": 7.0,
+          "max": 9.0
+        },
+        "logical_depth": {
+          "mean": 130.3889,
+          "std": 4.2575,
+          "min": 123.0,
+          "max": 138.0
+        },
+        "compiled_depth": {
+          "mean": 10.0,
+          "std": 0.0,
+          "min": 10.0,
+          "max": 10.0
+        },
+        "cx_count": {
+          "mean": 3.5,
+          "std": 0.0,
+          "min": 3.5,
+          "max": 3.5
+        },
+        "cx_density": {
+          "mean": 0.35,
+          "std": 0.0,
+          "min": 0.35,
+          "max": 0.35
+        },
+        "swap_count": {
+          "mean": 0.5,
+          "std": 0.0,
+          "min": 0.5,
+          "max": 0.5
+        },
+        "layout_span": {
+          "mean": 5.5,
+          "std": 0.0,
+          "min": 5.5,
+          "max": 5.5
+        },
+        "expected_fidelity": {
+          "mean": 0.8843,
+          "std": 0.0,
+          "min": 0.8843,
+          "max": 0.8843
+        },
+        "compile_cost": {
+          "mean": 0.237,
+          "std": 0.0,
+          "min": 0.237,
+          "max": 0.237
+        }
+      },
+      "classB": {
+        "num_jobs": 18,
+        "logical_qubits": {
+          "mean": 7.9444,
+          "std": 0.848,
+          "min": 7.0,
+          "max": 9.0
+        },
+        "logical_depth": {
+          "mean": 129.6111,
+          "std": 5.0678,
+          "min": 122.0,
+          "max": 138.0
+        },
+        "compiled_depth": {
+          "mean": 19.5,
+          "std": 0.0,
+          "min": 19.5,
+          "max": 19.5
+        },
+        "cx_count": {
+          "mean": 14.5,
+          "std": 0.0,
+          "min": 14.5,
+          "max": 14.5
+        },
+        "cx_density": {
+          "mean": 0.7436,
+          "std": 0.0,
+          "min": 0.7436,
+          "max": 0.7436
+        },
+        "swap_count": {
+          "mean": 1.5,
+          "std": 0.0,
+          "min": 1.5,
+          "max": 1.5
+        },
+        "layout_span": {
+          "mean": 7.0,
+          "std": 0.0,
+          "min": 7.0,
+          "max": 7.0
+        },
+        "expected_fidelity": {
+          "mean": 0.7947,
+          "std": 0.0,
+          "min": 0.7947,
+          "max": 0.7947
+        },
+        "compile_cost": {
+          "mean": 0.4643,
+          "std": 0.0,
+          "min": 0.4643,
+          "max": 0.4643
+        }
+      }
+    }
+  ],
+  "summary": {
+    "classA": {
+      "logical_qubits": {
+        "mean": 7.9175,
+        "std": 0.1793,
+        "min": 7.6111,
+        "max": 8.3125
+      },
+      "logical_depth": {
+        "mean": 130.1701,
+        "std": 1.3342,
+        "min": 128.2778,
+        "max": 132.4211
+      },
+      "compiled_depth": {
+        "mean": 10.0,
+        "std": 0.0,
+        "min": 10.0,
+        "max": 10.0
+      },
+      "cx_count": {
+        "mean": 3.5,
+        "std": 0.0,
+        "min": 3.5,
+        "max": 3.5
+      },
+      "cx_density": {
+        "mean": 0.35,
+        "std": 0.0,
+        "min": 0.35,
+        "max": 0.35
+      },
+      "swap_count": {
+        "mean": 0.5,
+        "std": 0.0,
+        "min": 0.5,
+        "max": 0.5
+      },
+      "layout_span": {
+        "mean": 5.5,
+        "std": 0.0,
+        "min": 5.5,
+        "max": 5.5
+      },
+      "expected_fidelity": {
+        "mean": 0.8996,
+        "std": 0.0134,
+        "min": 0.8717,
+        "max": 0.9208
+      },
+      "compile_cost": {
+        "mean": 0.237,
+        "std": 0.0,
+        "min": 0.237,
+        "max": 0.237
+      }
+    },
+    "classB": {
+      "logical_qubits": {
+        "mean": 8.0257,
+        "std": 0.1919,
+        "min": 7.6471,
+        "max": 8.3333
+      },
+      "logical_depth": {
+        "mean": 129.9253,
+        "std": 0.9825,
+        "min": 128.3529,
+        "max": 132.4706
+      },
+      "compiled_depth": {
+        "mean": 20.0729,
+        "std": 1.4953,
+        "min": 19.5,
+        "max": 25.5
+      },
+      "cx_count": {
+        "mean": 15.1207,
+        "std": 1.6199,
+        "min": 14.5,
+        "max": 21.0
+      },
+      "cx_density": {
+        "mean": 0.7512,
+        "std": 0.0199,
+        "min": 0.7436,
+        "max": 0.8235
+      },
+      "swap_count": {
+        "mean": 1.691,
+        "std": 0.4984,
+        "min": 1.5,
+        "max": 3.5
+      },
+      "layout_span": {
+        "mean": 7.0,
+        "std": 0.0,
+        "min": 7.0,
+        "max": 7.0
+      },
+      "expected_fidelity": {
+        "mean": 0.8033,
+        "std": 0.0152,
+        "min": 0.7653,
+        "max": 0.8337
+      },
+      "compile_cost": {
+        "mean": 0.4827,
+        "std": 0.048,
+        "min": 0.4643,
+        "max": 0.657
+      }
+    }
+  }
+}

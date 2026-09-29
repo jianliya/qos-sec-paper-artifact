@@ -1,0 +1,30 @@
+{
+  "scenario": "timing_release_tradeoff",
+  "seed": 42,
+  "seeds": [42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57],
+  "benign_jobs": 30,
+  "probe_jobs": 220,
+  "victim_jobs": 16,
+  "baseline_names": ["balanced", "isolation", "secure_joint"],
+  "defense_scheduler": "secure_joint",
+  "active_workload_profile": "controlled",
+  "workload_profiles": {
+    "controlled": {
+      "benign_count_scale": 1.0,
+      "probe_count_scale": 1.0,
+      "victim_count_scale": 1.0,
+      "benign_arrival_gap": 0.6,
+      "victim_arrival_gap": 0.75,
+      "probe_arrival_gap": 0.55,
+      "pressure_multiplier": 1.0
+    }
+  },
+  "observability_mode": "external_only",
+  "observation_space": "O_ext",
+  "public_feature_set": "wait_only",
+  "backend_encoding": "onehot",
+  "ci_method": "student_t",
+  "release_tradeoff_variants": ["raw", "monotone_padding", "delayed_release"],
+  "output_dir": "results/timing_oext/release_tradeoff",
+  "output_summary_filename": "summary_tradeoff.json"
+}

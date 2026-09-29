@@ -1,0 +1,59 @@
+{
+  "scenario": "timing_quantum_ablation",
+  "seeds": [42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57],
+  "benign_jobs": 30,
+  "probe_jobs": 220,
+  "victim_jobs": 16,
+  "baseline_names": ["balanced", "secure_joint", "queue"],
+  "attack_scheduler": "balanced",
+  "defense_scheduler": "secure_joint",
+  "active_workload_profile": "controlled",
+  "workload_profiles": {
+    "controlled": {
+      "pressure_multiplier": 1.0
+    },
+    "shared_cloud_bursty": {
+      "benign_count_scale": 1.35,
+      "probe_count_scale": 1.0,
+      "victim_count_scale": 1.0,
+      "benign_arrival_gap": 0.46,
+      "victim_arrival_gap": 0.68,
+      "probe_arrival_gap": 0.52,
+      "benign_burst_every": 4,
+      "benign_burst_extra": 0.42,
+      "benign_depth_bias": 12,
+      "pressure_multiplier": 1.18
+    }
+  },
+  "observability_mode": "full",
+  "masked_mode": "hardened",
+  "main_profile": "main_quantum",
+  "quantum_ablations": [
+    "main_quantum",
+    "uniform_backend_quality",
+    "no_calibration_drift",
+    "topology_insensitive",
+    "compile_path_neutralized",
+    "noise_flattened",
+    "no_coexecution_sensitivity",
+    "classical_queue_baseline",
+    "coarse_observability_baseline",
+    "masked_backend_only_baseline",
+    "queue_length_only_baseline"
+  ],
+  "quantum_ablation_defaults": {
+    "use_backend_quality_variation": true,
+    "use_queue_time_variation": true,
+    "use_backend_utilization_variation": true,
+    "use_backend_size_heterogeneity": true,
+    "use_compile_path_variation": true,
+    "use_noise_shaping_variation": true,
+    "use_eligibility_variation": true,
+    "use_class_dependent_pressure": true,
+    "use_isolation_pressure_boost": true,
+    "use_probe_pressure_discount": true,
+    "scheduler_override": null,
+    "defense_scheduler_override": null,
+    "observability_mode_override": null
+  }
+}
